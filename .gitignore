@@ -1,0 +1,23 @@
+# Buyuk / uretilen veri dosyalari
+data/coa.csv
+sql/02_insert_data.sql
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Ortam / gizli
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# PyInstaller
+*.spec
