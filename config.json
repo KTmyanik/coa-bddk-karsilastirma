@@ -1,13 +1,8 @@
 {
-  "sql_server": "PASIFIK",
-  "database": "TDUTIL",
-  "trusted_connection": true,
-  "username": "",
-  "password": "",
+  "connection_file": "connection.json",
   "query_file": "queries/coa_query.sql",
   "code_column": "Ledgercode",
   "name_column": "Ledgername",
   "bddk_url": "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1043",
-  "bddk_cache_file": "data/bddk_reference.json",
-  "command_timeout_seconds": 120
+  "bddk_cache_file": "data/bddk_reference.json"
 }

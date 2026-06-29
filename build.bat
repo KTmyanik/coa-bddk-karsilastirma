@@ -2,13 +2,14 @@
 setlocal
 cd /d "%~dp0"
 
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m PyInstaller ^
   --noconfirm ^
   --onefile ^
   --windowed ^
   --name CoaBddkCompare ^
   --add-data "config.json;." ^
+  --add-data "connection.json;." ^
   --add-data "queries;queries" ^
   --add-data "data;data" ^
   src\main.py

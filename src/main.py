@@ -51,6 +51,7 @@ class CompareApp(tk.Tk):
         ttk.Button(toolbar, text="Karsilastir", command=self.run_compare).pack(side="left")
         ttk.Button(toolbar, text="Excel Disa Aktar", command=self.export_csv).pack(side="left", padx=(8, 0))
         ttk.Button(toolbar, text="Config Ac", command=self.open_config).pack(side="left", padx=(8, 0))
+        ttk.Button(toolbar, text="Baglanti Ac", command=self.open_connection).pack(side="left", padx=(8, 0))
         ttk.Button(toolbar, text="Sorgu Dosyasi Ac", command=self.open_query_file).pack(side="left", padx=(8, 0))
 
         self.status_filter = tk.StringVar(value="TUMU")
@@ -222,6 +223,16 @@ class CompareApp(tk.Tk):
         import os
 
         os.startfile(path)
+
+    def open_connection(self) -> None:
+        config = load_config(self.config_path)
+        connection_path = project_root() / "connection.json"
+        if not connection_path.exists():
+            messagebox.showerror("Hata", f"Baglanti dosyasi bulunamadi: {connection_path}")
+            return
+        import os
+
+        os.startfile(connection_path)
 
     def open_query_file(self) -> None:
         config = load_config(self.config_path)

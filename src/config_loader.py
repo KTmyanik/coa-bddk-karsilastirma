@@ -39,18 +39,29 @@ def load_config(config_path: Path | None = None) -> AppConfig:
     path = config_path or (project_root() / "config.json")
     payload = json.loads(path.read_text(encoding="utf-8"))
 
+    connection_payload = payload
+    connection_file = payload.get("connection_file")
+    if connection_file:
+        connection_path = resolve_project_path(connection_file)
+        if not connection_path.exists():
+            raise FileNotFoundError(f"Baglanti dosyasi bulunamadi: {connection_path}")
+        connection_payload = {
+            **payload,
+            **json.loads(connection_path.read_text(encoding="utf-8")),
+        }
+
     return AppConfig(
-        sql_server=payload["sql_server"],
-        database=payload["database"],
-        trusted_connection=bool(payload.get("trusted_connection", True)),
-        username=payload.get("username", ""),
-        password=payload.get("password", ""),
+        sql_server=connection_payload["sql_server"],
+        database=connection_payload["database"],
+        trusted_connection=bool(connection_payload.get("trusted_connection", True)),
+        username=connection_payload.get("username", ""),
+        password=connection_payload.get("password", ""),
         query_file=resolve_project_path(payload["query_file"]),
         code_column=payload.get("code_column", "Ledgercode"),
         name_column=payload.get("name_column", "Ledgername"),
         bddk_url=payload.get("bddk_url", "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1043"),
         bddk_cache_file=resolve_project_path(payload.get("bddk_cache_file", "data/bddk_reference.json")),
-        command_timeout_seconds=int(payload.get("command_timeout_seconds", 120)),
+        command_timeout_seconds=int(connection_payload.get("command_timeout_seconds", 120)),
     )
 
 

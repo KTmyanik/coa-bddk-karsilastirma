@@ -1,0 +1,8 @@
+{
+  "sql_server": "SUNUCU_ADI",
+  "database": "VERITABANI_ADI",
+  "trusted_connection": true,
+  "username": "",
+  "password": "",
+  "command_timeout_seconds": 120
+}

@@ -24,17 +24,38 @@ Veriyi yeniden uretmek icin:
 python tools/generate_insert_sql.py
 ```
 
-## 2) Config
+## 2) Baglanti ayarlari
 
-`config.json` icinde SQL baglanti bilgilerini duzenleyin:
+SQL baglantisi **`connection.json`** dosyasindan okunur. Uygulama her acilista bu dosyayi yeniden yukler.
+
+Varsayilan:
 
 ```json
 {
-  "sql_server": "localhost",
-  "database": "CoaCompare",
-  "trusted_connection": true
+  "sql_server": "PASIFIK",
+  "database": "TDUTIL",
+  "trusted_connection": true,
+  "username": "",
+  "password": "",
+  "command_timeout_seconds": 120
 }
 ```
+
+Baska bilgisayarda sadece `connection.json` duzenlemeniz yeterli.
+Windows Authentication disinda kullanici adi/sifre icin:
+
+```json
+{
+  "sql_server": "SUNUCU",
+  "database": "TDUTIL",
+  "trusted_connection": false,
+  "username": "kullanici",
+  "password": "sifre",
+  "command_timeout_seconds": 120
+}
+```
+
+Uygulama icinden **Baglanti Ac** butonu ile de duzenleyebilirsiniz.
 
 ## 3) Sorgu dosyasi (degistirilebilir)
 
@@ -63,9 +84,29 @@ Sorgu sonucunda en az su kolonlar olmali: `Ledgercode`, `Ledgername`
 ## 4) Uygulamayi calistirma
 
 ```powershell
-cd C:\Users\mesut\Projects\coa-bddk-karsilastirma
+run.bat
+```
+
+veya:
+
+```powershell
 python -m pip install -r requirements.txt
 python src\main.py
+```
+
+### Baska bilgisayarda calistirma
+
+1. Tum proje klasorunu kopyalayin (en az: `src\`, `data\`, `queries\`, `config.json`, `requirements.txt`, `run.bat`)
+2. Python 3.10+ kurulu olmali
+3. `connection.json` icinde `sql_server` ve `database` degerlerini o bilgisayara gore duzenleyin
+4. **ODBC Driver 17 for SQL Server** kurulu olmali
+5. `run.bat` calistirin — hata olursa pencere kapanmadan mesaji gosterir
+6. SQL testi icin: `test_connection.bat`
+
+Gelistirme / EXE icin ek paketler:
+
+```powershell
+python -m pip install -r requirements-dev.txt
 ```
 
 ## 5) EXE uretme
@@ -79,6 +120,7 @@ Uretilen dosya: `dist\CoaBddkCompare.exe`
 EXE ile birlikte ayni klasorde su dosyalar kalmali:
 
 - `config.json`
+- `connection.json`
 - `queries\coa_query.sql`
 - `data\bddk_reference.json`
 
