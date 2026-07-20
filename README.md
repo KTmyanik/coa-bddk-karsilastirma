@@ -101,13 +101,25 @@ python -m pip install -r requirements.txt
 python src\main.py
 ```
 
-### Baska bilgisayarda calistirma
+### Baska bilgisayarda / kurumsal agda calistirma
 
-1. Tum proje klasorunu kopyalayin (en az: `src\`, `data\`, `queries\`, `config.json`, `requirements.txt`, `run.bat`)
+PyPI'ye erisim yoksa (SSL / timeout), proje icindeki offline wheel kullanilir:
+
+- `vendor\wheels\pypdf-*.whl`
+
+`run.bat` once yerel wheel'den kurar, internete ihtiyac duymaz.
+
+Elle kurulum:
+
+```powershell
+py -m pip install --no-index --find-links=vendor\wheels pypdf
+```
+
+1. Tum proje klasorunu kopyalayin (en az: `src\`, `data\`, `queries\`, `vendor\`, `config.json`, `connection.json`, `requirements.txt`, `run.bat`)
 2. Python 3.10+ kurulu olmali
 3. `connection.json` icinde `sql_server` ve `database` degerlerini o bilgisayara gore duzenleyin
 4. **ODBC Driver 17 for SQL Server** kurulu olmali
-5. `run.bat` calistirin — hata olursa pencere kapanmadan mesaji gosterir
+5. `run.bat` calistirin
 6. SQL testi icin: `test_connection.bat`
 
 Gelistirme / EXE icin ek paketler:

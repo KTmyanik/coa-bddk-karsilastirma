@@ -24,3 +24,5 @@ build/
 
 # PyInstaller
 *.spec
+
+# vendor/wheels/*.whl repoda KALMALI (offline kurulum icin)
