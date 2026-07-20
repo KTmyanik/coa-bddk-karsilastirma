@@ -3,6 +3,6 @@
   "query_file": "queries/coa_query.sql",
   "code_column": "Ledgercode",
   "name_column": "Ledgername",
-  "bddk_url": "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1043",
+  "bddk_url": "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1334",
   "bddk_cache_file": "data/bddk_reference.json"
 }

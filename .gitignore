@@ -1,6 +1,9 @@
 # Buyuk / uretilen veri dosyalari
 data/coa.csv
 sql/02_insert_data.sql
+data/bddk_1334*
+data/*.bin
+data/*_sample.txt
 
 # Python
 __pycache__/

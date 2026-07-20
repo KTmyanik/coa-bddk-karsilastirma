@@ -126,10 +126,14 @@ class CompareApp(tk.Tk):
             records, query = load_coa_from_sql(config)
             self.last_query = query
 
-            self.info_var.set("BDDK hesap plani yukleniyor...")
+            self.info_var.set("BDDK hesap plani indiriliyor (her karsilastirmada yenilenir)...")
             self.update_idletasks()
 
-            bddk_accounts = load_bddk_accounts(config.bddk_cache_file, config.bddk_url)
+            bddk_accounts = load_bddk_accounts(
+                config.bddk_cache_file,
+                config.bddk_url,
+                refresh=True,
+            )
             comparator = CoaComparator(bddk_accounts)
 
             self.info_var.set("Kodlar birlestiriliyor ve karsilastiriliyor...")

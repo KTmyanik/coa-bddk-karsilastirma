@@ -28,7 +28,7 @@ echo [1/4] Python:
 if errorlevel 1 goto :fail
 echo.
 
-echo [2/4] Bagimliliklar kuruluyor (pyodbc)...
+echo [2/4] Bagimliliklar kuruluyor (pyodbc, pypdf)...
 %PY% -m pip install -r requirements.txt
 if errorlevel 1 (
     echo [HATA] pip install basarisiz oldu.

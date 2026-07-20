@@ -59,7 +59,7 @@ def load_config(config_path: Path | None = None) -> AppConfig:
         query_file=resolve_project_path(payload["query_file"]),
         code_column=payload.get("code_column", "Ledgercode"),
         name_column=payload.get("name_column", "Ledgername"),
-        bddk_url=payload.get("bddk_url", "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1043"),
+        bddk_url=payload.get("bddk_url", "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1334"),
         bddk_cache_file=resolve_project_path(payload.get("bddk_cache_file", "data/bddk_reference.json")),
         command_timeout_seconds=int(connection_payload.get("command_timeout_seconds", 120)),
     )

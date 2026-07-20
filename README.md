@@ -57,6 +57,13 @@ Windows Authentication disinda kullanici adi/sifre icin:
 
 Uygulama icinden **Baglanti Ac** butonu ile de duzenleyebilirsiniz.
 
+BDDK dokumani PDF ise (DokumanGetir/1334 gibi) uygulama `pypdf` ile metni cikarir.
+Cache dosyasini yeniden uretmek icin:
+
+```powershell
+python tools/refresh_bddk_cache.py
+```
+
 ## 3) Sorgu dosyasi (degistirilebilir)
 
 Uygulama her calistirmada su dosyayi okur:
