@@ -22,9 +22,12 @@ class CompareResult:
 
 class CoaComparator:
     def __init__(self, bddk_accounts: list[BddkAccount]) -> None:
+        # PDF sirasi korunur
+        self._bddk_accounts = list(bddk_accounts)
         self._bddk_by_code: dict[str, str] = {
             account.code: account.name for account in bddk_accounts
         }
+        self._pdf_order: list[str] = [account.code for account in bddk_accounts]
 
     def compare_all(self, records: list[CoaRecord]) -> list[CompareResult]:
         sql_by_code: dict[str, list[str]] = {}
@@ -33,12 +36,63 @@ class CoaComparator:
             if record.name not in names:
                 names.append(record.name)
 
-        all_codes = sorted(
-            set(self._bddk_by_code.keys()) | set(sql_by_code.keys()),
-            key=self._sort_key,
-        )
+        ordered_codes = self._build_ordered_codes(set(sql_by_code.keys()))
+        return [self._compare_code(code, sql_by_code) for code in ordered_codes]
 
-        return [self._compare_code(code, sql_by_code) for code in all_codes]
+    def _build_ordered_codes(self, sql_codes: set[str]) -> list[str]:
+        """PDF sirasini baz al; COA-only kodlari hiyerarsik olarak uygun yere yerlestir."""
+        ordered = list(self._pdf_order)
+        present = set(ordered)
+
+        coa_only = [code for code in sql_codes if code not in present]
+        # Once kisa kodlar (ust hesap), sonra uzunlar
+        coa_only.sort(key=lambda code: (len(code), code))
+
+        for code in coa_only:
+            index = self._find_insert_index(ordered, code)
+            ordered.insert(index, code)
+            present.add(code)
+
+        return ordered
+
+    def _find_insert_index(self, ordered: list[str], code: str) -> int:
+        parent = ""
+        parent_idx = -1
+        for index, candidate in enumerate(ordered):
+            if code.startswith(candidate) and len(candidate) > len(parent):
+                parent = candidate
+                parent_idx = index
+
+        if parent_idx >= 0:
+            index = parent_idx + 1
+            while index < len(ordered):
+                current = ordered[index]
+                if not current.startswith(parent):
+                    break
+                if current.startswith(code):
+                    return index
+                if code.startswith(current):
+                    index += 1
+                    continue
+                if self._hierarchy_key(current) < self._hierarchy_key(code):
+                    index += 1
+                    continue
+                return index
+            return index
+
+        # Ust hesap PDF'te yoksa genel siraya yerlestir
+        key = self._hierarchy_key(code)
+        for index, current in enumerate(ordered):
+            if self._hierarchy_key(current) > key:
+                return index
+        return len(ordered)
+
+    @staticmethod
+    def _hierarchy_key(code: str) -> tuple:
+        # Sayisal hiyerarsi + orijinal string (esitlikte kararli)
+        if code.isdigit():
+            return (0, int(code), len(code), code)
+        return (1, code, len(code), code)
 
     def _compare_code(self, code: str, sql_by_code: dict[str, list[str]]) -> CompareResult:
         in_bddk = code in self._bddk_by_code
@@ -84,12 +138,10 @@ class CoaComparator:
         normalized_sql = [normalize_text(name) for name in sql_names]
 
         best_similarity = 0.0
-        best_sql_name = sql_names[0] if sql_names else ""
-        for raw_name, normalized_name in zip(sql_names, normalized_sql, strict=False):
+        for normalized_name in normalized_sql:
             similarity = self._name_similarity(normalized_bddk, normalized_name)
             if similarity > best_similarity:
                 best_similarity = similarity
-                best_sql_name = raw_name
 
         sql_name = " | ".join(sql_names)
         duplicate_note = ""
@@ -131,12 +183,6 @@ class CoaComparator:
             detail=detail.strip(),
             similarity=best_similarity,
         )
-
-    @staticmethod
-    def _sort_key(code: str) -> tuple[int, int | str, str]:
-        if code.isdigit():
-            return (0, int(code), code)
-        return (1, code, code)
 
     @staticmethod
     def _name_similarity(bddk_name: str, sql_name: str) -> float:

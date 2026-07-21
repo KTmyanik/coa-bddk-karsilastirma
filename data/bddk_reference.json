@@ -513,7 +513,7 @@
   },
   {
     "code": "030",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/Z ARARA YANSITILAN MENKUL DEĞERLER -"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL DEĞERLER - T.P. ALIM SATIM AMAÇLI MENKUL DEĞERLER"
   },
   {
     "code": "03000",
@@ -617,7 +617,7 @@
   },
   {
     "code": "030099",
-    "name": "SERMAYEDE PAYI TEMSİL EDEN DİĞER MENKUL KIYMETLER"
+    "name": "SERMAYEDE PAYI TEMSİL EDEN DİĞER MENKUL KIYMETLER GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER"
   },
   {
     "code": "03010",
@@ -677,11 +677,11 @@
   },
   {
     "code": "03018",
-    "name": "DİĞER GERÇEĞE UYGUN DEĞER FARKI KÂR /ZARARA YANSITILMASI SEÇENEĞİ"
+    "name": "DİĞER GERÇEĞE UYGUN DEĞER FARKI KÂR /ZARARA YANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER"
   },
   {
     "code": "03019",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR A YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR AYANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER DEĞER ARTIŞ HESABI"
   },
   {
     "code": "030190",
@@ -697,7 +697,7 @@
   },
   {
     "code": "031",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/Z ARARA YANSITILAN MENKUL DEĞERLER -"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL DEĞERLER - Y.P. ALIM SATIM AMAÇLI MENKUL DEĞERLER"
   },
   {
     "code": "03100",
@@ -801,7 +801,7 @@
   },
   {
     "code": "031092",
-    "name": "SERMAYEDE PAYI TEMSİL EDEN DİĞER MENKUL KIYMETLER"
+    "name": "SERMAYEDE PAYI TEMSİL EDEN DİĞER MENKUL KIYMETLER GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER"
   },
   {
     "code": "03110",
@@ -861,11 +861,11 @@
   },
   {
     "code": "03118",
-    "name": "DİĞER GERÇEĞE UYGUN DEĞER FARKI KÂ R/ZARARA YANSITILMASI SEÇENEĞİ"
+    "name": "DİĞER GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER"
   },
   {
     "code": "03119",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RA YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RAYANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLER DEĞER ARTIŞ HESABI"
   },
   {
     "code": "031190",
@@ -881,7 +881,7 @@
   },
   {
     "code": "032",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER - T.P."
   },
   {
     "code": "03220",
@@ -1005,7 +1005,7 @@
   },
   {
     "code": "033",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER - Y.P."
   },
   {
     "code": "03320",
@@ -1157,7 +1157,7 @@
   },
   {
     "code": "03801",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "038013",
@@ -1209,7 +1209,7 @@
   },
   {
     "code": "03901",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "039013",
@@ -1368,6 +1368,10 @@
     "name": "İSKONTOLU İŞLEMLERDEN ALACAKLAR- T.P."
   },
   {
+    "code": "10000",
+    "name": "İSKONTOLU VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR - RÜCU EDİLEBİLİR"
+  },
+  {
     "code": "100000",
     "name": "İŞTİRAKLER VE BAĞLI ORTAKLIKLAR"
   },
@@ -1426,6 +1430,10 @@
   {
     "code": "1000024",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "10001",
+    "name": "İSKONTOLU VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR - RÜCU EDİLEMEZ"
   },
   {
     "code": "100010",
@@ -1492,6 +1500,10 @@
     "name": "İSKONTOLU İŞLEMLERDEN ALACAKLAR-Y.P."
   },
   {
+    "code": "10100",
+    "name": "İSKONTOLU VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR - RÜCU EDİLEBİLİR"
+  },
+  {
     "code": "101000",
     "name": "İŞTİRAKLER VE BAĞLI ORTAKLIKLAR"
   },
@@ -1550,6 +1562,10 @@
   {
     "code": "1010024",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "10101",
+    "name": "İSKONTOLU VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR - RÜCU EDİLEMEZ"
   },
   {
     "code": "101010",
@@ -1870,6 +1886,10 @@
   {
     "code": "1060124",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "107",
+    "name": "VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR – Y.P."
   },
   {
     "code": "10700",
@@ -6452,6 +6472,10 @@
     "name": "DİĞER MÜŞTERİLER- (ÖZEL)"
   },
   {
+    "code": "1500050",
+    "name": "ÖZKAYNAKLARDAN"
+  },
+  {
     "code": "1500052",
     "name": "KATILMA HESAPLARINDAN"
   },
@@ -6490,6 +6514,10 @@
   {
     "code": "150064",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1500640",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1500642",
@@ -7344,6 +7372,10 @@
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
+    "code": "1510014",
+    "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
     "code": "151004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
   },
@@ -7362,6 +7394,10 @@
   {
     "code": "1510044",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "151005",
+    "name": "DİĞER MÜŞTERİLER - (ÖZEL )"
   },
   {
     "code": "1510050",
@@ -7386,6 +7422,10 @@
   {
     "code": "151061",
     "name": "İŞTİRAKLER VE BAĞLI ORTAKLIKLAR"
+  },
+  {
+    "code": "1510610",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1510612",
@@ -8260,6 +8300,10 @@
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
+    "code": "1520014",
+    "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
     "code": "152004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
   },
@@ -8282,6 +8326,10 @@
   {
     "code": "152005",
     "name": "DİĞER MÜŞTERİLER- (ÖZEL)"
+  },
+  {
+    "code": "1520050",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1520052",
@@ -8308,12 +8356,20 @@
     "name": "ÖZKAYNAKLARDAN"
   },
   {
+    "code": "1520612",
+    "name": "KATILMA HESAPLARINDAN"
+  },
+  {
     "code": "1520613",
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
     "code": "1520614",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "152064",
+    "name": "DİĞER MÜŞTERİLER - (KAMU)"
   },
   {
     "code": "1520640",
@@ -9172,6 +9228,10 @@
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
+    "code": "1530014",
+    "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
     "code": "153004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
   },
@@ -9190,6 +9250,10 @@
   {
     "code": "1530044",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "153005",
+    "name": "DİĞER MÜŞTERİLER - (ÖZEL )"
   },
   {
     "code": "1530050",
@@ -9214,6 +9278,10 @@
   {
     "code": "153061",
     "name": "İŞTİRAKLER VE BAĞLI ORTAKLIKLAR"
+  },
+  {
+    "code": "1530610",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1530612",
@@ -10065,7 +10133,11 @@
   },
   {
     "code": "154",
-    "name": "CANLI ALACAKLARDAN YENİDEN YAP ILANDIRILAN ORTA VE UZUN VADELİ"
+    "name": "CANLI ALACAKLARDAN YENİDEN YAP ILANDIRILAN ORTA VE UZUN VADELİ KREDİLER – T. P."
+  },
+  {
+    "code": "15400",
+    "name": "İSKONTOLU İŞLEMLERDEN ALACAKLAR"
   },
   {
     "code": "154001",
@@ -10080,12 +10152,20 @@
     "name": "KATILMA HESAPLARINDAN"
   },
   {
+    "code": "1540013",
+    "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
+  },
+  {
     "code": "1540014",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
   },
   {
     "code": "154004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1540040",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1540042",
@@ -10220,12 +10300,20 @@
     "name": "KATILMA HESAPLARINDAN"
   },
   {
+    "code": "1540613",
+    "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
+  },
+  {
     "code": "1540614",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
   },
   {
     "code": "154064",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1540640",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1540642",
@@ -11069,7 +11157,7 @@
   },
   {
     "code": "155",
-    "name": "CANLI ALACAKLARDAN YENİDEN YAP ILANDIRILAN ORTA VE UZUN VADELİ"
+    "name": "CANLI ALACAKLARDAN YENİDEN YAP ILANDIRILAN ORTA VE UZUN VADELİ KREDİLER – Y. P."
   },
   {
     "code": "15500",
@@ -11098,6 +11186,10 @@
   {
     "code": "155004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1550040",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1550042",
@@ -11232,12 +11324,20 @@
     "name": "KATILMA HESAPLARINDAN"
   },
   {
+    "code": "1550613",
+    "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
+  },
+  {
     "code": "1550614",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
   },
   {
     "code": "155064",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1550640",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1550642",
@@ -12081,7 +12181,11 @@
   },
   {
     "code": "156",
-    "name": "DONUK ALACAKLARDAN YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ"
+    "name": "DONUK ALACAKLARDAN YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLER – T.P."
+  },
+  {
+    "code": "15600",
+    "name": "İSKONTOLU İŞLEMLERDEN ALACAKLAR"
   },
   {
     "code": "156001",
@@ -12096,12 +12200,20 @@
     "name": "KATILMA HESAPLARINDAN"
   },
   {
+    "code": "1560013",
+    "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
+  },
+  {
     "code": "1560014",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
   },
   {
     "code": "156004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1560040",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1560042",
@@ -12220,6 +12332,10 @@
     "name": "KATILMA HESAPLARI YATIRIM VEKÂLETİ HAVUZLARINDAN"
   },
   {
+    "code": "15606",
+    "name": "VADELİ TİCARETİN FİNANSMANINDAN ALACAKLAR"
+  },
+  {
     "code": "156061",
     "name": "İŞTİRAKLER VE BAĞLI ORTAKLIKLAR"
   },
@@ -12228,12 +12344,20 @@
     "name": "ÖZKAYNAKLARDAN"
   },
   {
+    "code": "1560612",
+    "name": "KATILMA HESAPLARINDAN"
+  },
+  {
     "code": "1560613",
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
     "code": "1560614",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "156064",
+    "name": "DİĞER MÜŞTERİLER - (KAMU)"
   },
   {
     "code": "1560640",
@@ -13081,7 +13205,7 @@
   },
   {
     "code": "157",
-    "name": "DONUK ALACAKLARDAN YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ"
+    "name": "DONUK ALACAKLARDAN YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLER – Y.P."
   },
   {
     "code": "15700",
@@ -13100,12 +13224,20 @@
     "name": "KATILMA HESAPLARINDAN"
   },
   {
+    "code": "1570013",
+    "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
+  },
+  {
     "code": "1570014",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
   },
   {
     "code": "157004",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
+  },
+  {
+    "code": "1570040",
+    "name": "ÖZKAYNAKLARDAN"
   },
   {
     "code": "1570042",
@@ -13244,6 +13376,10 @@
     "name": "KATILMA HESAPLARI ÖZEL FON HESAPLARINDAN"
   },
   {
+    "code": "1570614",
+    "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
     "code": "157064",
     "name": "DİĞER MÜŞTERİLER- (KAMU)"
   },
@@ -13262,6 +13398,10 @@
   {
     "code": "1570644",
     "name": "KATILMA HESAPLARI YATIRIM VEKALETİ HAVUZLARINDAN"
+  },
+  {
+    "code": "157065",
+    "name": "DİĞER MÜŞTERİLER - (ÖZEL )"
   },
   {
     "code": "1570650",
@@ -14149,11 +14289,11 @@
   },
   {
     "code": "160",
-    "name": "KANUN ve/veya KARARNAMELERE DAY ANAN ERTELENMİŞ ve"
+    "name": "KANUN ve/veya KARARNAMELERE DAY ANAN ERTELENMİŞ ve TAKSİTLENDİRİLMİŞ KREDİLER - T.P."
   },
   {
     "code": "161",
-    "name": "KANUN ve/veya KARARNAMELERE DAY ANAN ERTELENMİŞ ve"
+    "name": "KANUN ve/veya KARARNAMELERE DAY ANAN ERTELENMİŞ ve TAKSİTLENDİRİLMİŞ KREDİLER - Y.P."
   },
   {
     "code": "170",
@@ -14697,7 +14837,7 @@
   },
   {
     "code": "18200",
-    "name": "BİRİNCİ AŞAMA (12 AY BEKLENEN ZARAR KARŞILIĞI)"
+    "name": "BİRİNCİ AŞAMA (12 AYBEKLENEN ZARAR KARŞILIĞI)"
   },
   {
     "code": "182000",
@@ -14833,7 +14973,7 @@
   },
   {
     "code": "18300",
-    "name": "BİRİNCİ AŞAMA (12 AY BEKLENEN ZARAR KARŞILIĞI)"
+    "name": "BİRİNCİ AŞAMA (12 AYBEKLENEN ZARAR KARŞILIĞI)"
   },
   {
     "code": "183000",
@@ -14965,7 +15105,7 @@
   },
   {
     "code": "184",
-    "name": "GERÇEĞE UYGUN DEĞER ÜZERİNDEN DEĞERLENENKREDİLER DEĞER DÜŞÜŞ"
+    "name": "GERÇEĞE UYGUN DEĞER ÜZERİNDEN DEĞERLENENKREDİLER DEĞER DÜŞÜŞ KARŞILIĞI (-) – T.P."
   },
   {
     "code": "18400",
@@ -15057,7 +15197,7 @@
   },
   {
     "code": "185",
-    "name": "GERÇEĞE UYGUN DEĞER ÜZERİNDEN DEĞERLENENKREDİLER DEĞER DÜŞÜŞ"
+    "name": "GERÇEĞE UYGUN DEĞER ÜZERİNDEN DEĞERLENENKREDİLER DEĞER DÜŞÜŞ KARŞILIĞI (-) – Y.P."
   },
   {
     "code": "18500",
@@ -15421,7 +15561,7 @@
   },
   {
     "code": "22006",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR A YANSITILAN KREDİLER DEĞER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR AYANSITILAN KREDİLER DEĞER ARTIŞLARI"
   },
   {
     "code": "220060",
@@ -15441,7 +15581,7 @@
   },
   {
     "code": "22007",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN KREDİLER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN KREDİLER DEĞER ARTIŞLARI"
   },
   {
     "code": "220070",
@@ -15513,7 +15653,7 @@
   },
   {
     "code": "22106",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR A YANSITILAN KREDİLER DEĞER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR AYANSITILAN KREDİLER DEĞER ARTIŞLARI"
   },
   {
     "code": "221060",
@@ -15533,7 +15673,7 @@
   },
   {
     "code": "22107",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN KREDİLER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN KREDİLER DEĞER ARTIŞLARI"
   },
   {
     "code": "221070",
@@ -15581,11 +15721,11 @@
   },
   {
     "code": "222011",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR A YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR AYANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLERİN"
   },
   {
     "code": "222012",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "2220120",
@@ -15625,7 +15765,7 @@
   },
   {
     "code": "22203",
-    "name": "GERİ SATIM VAADİ İLE ALIM İŞLEMLERİ NDEN ALACAKLARA İLİŞKİN GELİR"
+    "name": "GERİ SATIM VAADİ İLE ALIM İŞLEMLERİ NDEN ALACAKLARA İLİŞKİN GELİR REESKONTLARI"
   },
   {
     "code": "22205",
@@ -15665,11 +15805,11 @@
   },
   {
     "code": "223011",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLERİN"
   },
   {
     "code": "223012",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAP SAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAP SAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "2230120",
@@ -15709,7 +15849,7 @@
   },
   {
     "code": "22303",
-    "name": "GERİ SATIM VAADİ İLE ALIM İŞLEMLERİ NDEN ALACAKLARA İLİŞKİN GELİR"
+    "name": "GERİ SATIM VAADİ İLE ALIM İŞLEMLERİ NDEN ALACAKLARA İLİŞKİN GELİR REESKONTLARI"
   },
   {
     "code": "22305",
@@ -15921,7 +16061,7 @@
   },
   {
     "code": "238",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DU RDURULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR – T.P"
   },
   {
     "code": "23800",
@@ -15989,7 +16129,7 @@
   },
   {
     "code": "239",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DU RDURULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR – Y.P."
   },
   {
     "code": "23900",
@@ -17041,7 +17181,7 @@
   },
   {
     "code": "246",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR V E BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR DEĞER DÜŞÜŞ KARŞILIĞI (-) - T.P."
   },
   {
     "code": "24600",
@@ -17057,7 +17197,7 @@
   },
   {
     "code": "247",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR V E BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR DEĞER DÜŞÜŞ KARŞILIĞI (-) - Y.P."
   },
   {
     "code": "24700",
@@ -17077,7 +17217,7 @@
   },
   {
     "code": "24800",
-    "name": "İŞ ORTAKLIKLARI"
+    "name": "İŞORTAKLIKLARI"
   },
   {
     "code": "248000",
@@ -17129,7 +17269,7 @@
   },
   {
     "code": "24900",
-    "name": "İŞ ORTAKLIKLARI"
+    "name": "İŞORTAKLIKLARI"
   },
   {
     "code": "249000",
@@ -17513,7 +17653,7 @@
   },
   {
     "code": "26403",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR"
   },
   {
     "code": "264030",
@@ -17601,7 +17741,7 @@
   },
   {
     "code": "26503",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR"
   },
   {
     "code": "265030",
@@ -18265,7 +18405,7 @@
   },
   {
     "code": "304",
-    "name": "ÖZEL CARİ HESAPLAR / RESMİ, TİCARİ VE DİĞER KURULUŞLAR (Y.İ.Y.) – T.P."
+    "name": "ÖZEL CARİ HESAPLAR / RESMİ, TİCARİ VE DİĞER KURULUŞLAR (Y.İ.Y.) – T.P. RESMİ KURULUŞLAR"
   },
   {
     "code": "30400",
@@ -18289,7 +18429,7 @@
   },
   {
     "code": "30405",
-    "name": "MAHKEME, SAVCILIK, İCRA VE İFLAS DAİRELERİ, TEREKE HÂKİMLİKLERİ"
+    "name": "MAHKEME, SAVCILIK, İCRA VE İFLAS DAİRELERİ, TEREKE HÂKİMLİKLERİ TİCARİ KURULUŞLAR"
   },
   {
     "code": "30420",
@@ -18313,7 +18453,7 @@
   },
   {
     "code": "30425",
-    "name": "VAKIF, DERNEK, SENDİKA, BİRLİK, MESLEK KURULUŞLARININ KURDUKLARI TİCARİ"
+    "name": "VAKIF, DERNEK, SENDİKA, BİRLİK, MESLEK KURULUŞLARININ KURDUKLARI TİCARİ İŞLETMELER"
   },
   {
     "code": "30426",
@@ -18325,7 +18465,7 @@
   },
   {
     "code": "30428",
-    "name": "BANKA DIŞI DİĞER MALİ KESİM"
+    "name": "BANKA DIŞI DİĞER MALİ KESİM DİĞER KURULUŞLAR"
   },
   {
     "code": "30440",
@@ -18341,7 +18481,7 @@
   },
   {
     "code": "30444",
-    "name": "MAHKEME SAVCILIK İCRA İFLAS DAİRELERİ TEREKE HAKİMLİKLERİ NEZDİNDEKİ"
+    "name": "MAHKEME SAVCILIK İCRA İFLAS DAİRELERİ TEREKE HAKİMLİKLERİ NEZDİNDEKİ PARALAR NOTERLİK HESAPLARI"
   },
   {
     "code": "30445",
@@ -18349,7 +18489,7 @@
   },
   {
     "code": "30446",
-    "name": "ELÇİLİK KONSOLOSLUK VE ULUSLARARASI KURULUŞLARIN TÜRKİYE’DEKİ BÜRO VE"
+    "name": "ELÇİLİK KONSOLOSLUK VE ULUSLARARASI KURULUŞLARIN TÜRKİYE’DEKİ BÜRO VE TEMSİLCİLİKLERİ"
   },
   {
     "code": "30447",
@@ -18589,7 +18729,7 @@
   },
   {
     "code": "32000",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "320000",
@@ -18625,7 +18765,7 @@
   },
   {
     "code": "32010",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "320100",
@@ -18661,7 +18801,7 @@
   },
   {
     "code": "32020",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "320200",
@@ -18805,7 +18945,7 @@
   },
   {
     "code": "32061",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "320610",
@@ -18953,7 +19093,7 @@
   },
   {
     "code": "32100",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "321000",
@@ -18989,7 +19129,7 @@
   },
   {
     "code": "32110",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "321100",
@@ -19025,7 +19165,7 @@
   },
   {
     "code": "32120",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "321200",
@@ -19169,7 +19309,7 @@
   },
   {
     "code": "32161",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "321610",
@@ -19317,7 +19457,7 @@
   },
   {
     "code": "32200",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "322000",
@@ -19353,7 +19493,7 @@
   },
   {
     "code": "32210",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "322100",
@@ -19389,7 +19529,7 @@
   },
   {
     "code": "32220",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "322200",
@@ -19533,7 +19673,7 @@
   },
   {
     "code": "32261",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "322610",
@@ -19645,7 +19785,7 @@
   },
   {
     "code": "32300",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "323000",
@@ -19681,7 +19821,7 @@
   },
   {
     "code": "32310",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "323100",
@@ -19717,7 +19857,7 @@
   },
   {
     "code": "32320",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "323200",
@@ -19861,7 +20001,7 @@
   },
   {
     "code": "32361",
-    "name": "BİR YIL VE DAHA UZUN VADELİ- ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ- ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "323610",
@@ -20017,7 +20157,7 @@
   },
   {
     "code": "32600",
-    "name": "BİR AYA KADAR VADELİ (1 AY DAHİL)"
+    "name": "BİR AYA KADAR VADELİ (1 AYDAHİL)"
   },
   {
     "code": "326002",
@@ -20045,7 +20185,7 @@
   },
   {
     "code": "32610",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "326102",
@@ -20073,7 +20213,7 @@
   },
   {
     "code": "32620",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "326202",
@@ -20185,7 +20325,7 @@
   },
   {
     "code": "32661",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "326612",
@@ -20301,7 +20441,7 @@
   },
   {
     "code": "32700",
-    "name": "BİR AYA KADAR VADELİ (1 AY DAHİL)"
+    "name": "BİR AYA KADAR VADELİ (1 AYDAHİL)"
   },
   {
     "code": "327002",
@@ -20329,7 +20469,7 @@
   },
   {
     "code": "32710",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "327102",
@@ -20357,7 +20497,7 @@
   },
   {
     "code": "32720",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "327202",
@@ -20469,7 +20609,7 @@
   },
   {
     "code": "32761",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "327612",
@@ -20581,7 +20721,7 @@
   },
   {
     "code": "328",
-    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN"
+    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN FONLAR - T.P."
   },
   {
     "code": "32800",
@@ -20617,7 +20757,7 @@
   },
   {
     "code": "329",
-    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN"
+    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN FONLAR - Y.P."
   },
   {
     "code": "32900",
@@ -20653,7 +20793,7 @@
   },
   {
     "code": "331",
-    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN"
+    "name": "KATILIM KALKINMA VE YATIRIM BANKALARI TARAFINDAN KABUL EDİLEN KIYMETLİ MADENLER – Y.P."
   },
   {
     "code": "332",
@@ -20889,7 +21029,7 @@
   },
   {
     "code": "336",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURD URULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURD URULAN FAALİYETLERE İLİŞKİN DURAN VARLIK BORÇLARI – T.P."
   },
   {
     "code": "33600",
@@ -20901,7 +21041,7 @@
   },
   {
     "code": "337",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURD URULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURD URULAN FAALİYETLERE İLİŞKİN DURAN VARLIK BORÇLARI – Y.P."
   },
   {
     "code": "33700",
@@ -21477,7 +21617,7 @@
   },
   {
     "code": "35005",
-    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANSAL KİRALAMA ALACAKLARI ANAPARA KUR"
+    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANSAL KİRALAMA ALACAKLARI ANAPARA KUR AZALIŞ KARŞILIKLARI"
   },
   {
     "code": "350050",
@@ -21569,7 +21709,7 @@
   },
   {
     "code": "350061",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "35007",
@@ -21577,7 +21717,7 @@
   },
   {
     "code": "35009",
-    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL"
+    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL KARŞILIKLARI"
   },
   {
     "code": "35010",
@@ -21589,7 +21729,7 @@
   },
   {
     "code": "35030",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETL ERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETL ERİNE İLİŞKİN PROMOSYON UYGULAMALARI KARŞILIĞI"
   },
   {
     "code": "35099",
@@ -21725,7 +21865,7 @@
   },
   {
     "code": "351061",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "35107",
@@ -21733,7 +21873,7 @@
   },
   {
     "code": "35109",
-    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL"
+    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL KARŞILIKLARI"
   },
   {
     "code": "35110",
@@ -21745,7 +21885,7 @@
   },
   {
     "code": "35130",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZMET LERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZMET LERİNE İLİŞKİN PROMOSYON UYGULAMALARI KARŞILIĞI"
   },
   {
     "code": "35199",
@@ -21829,7 +21969,7 @@
   },
   {
     "code": "36009",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN FİNANSAL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN FİNANSAL YÜKÜMLÜLÜKLERE İLİŞKİN GİDER REESKONTLARI"
   },
   {
     "code": "36099",
@@ -21865,7 +22005,7 @@
   },
   {
     "code": "36109",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN FİNANSAL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN FİNANSAL YÜKÜMLÜLÜKLERE İLİŞKİN GİDER REESKONTLARI"
   },
   {
     "code": "36199",
@@ -22881,11 +23021,11 @@
   },
   {
     "code": "414031",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAP SAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAP SAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "41404",
-    "name": "MADDİ VE MADDİ OLMAYAN DURAN VARLI KLAR YENİDEN DEĞERLEME"
+    "name": "MADDİ VE MADDİ OLMAYAN DURAN VARLI KLAR YENİDEN DEĞERLEME FARKLARI"
   },
   {
     "code": "414040",
@@ -22905,7 +23045,7 @@
   },
   {
     "code": "41405",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE B İRLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR BEDELSİZ HİSSE SENETLERİ"
   },
   {
     "code": "41406",
@@ -22913,7 +23053,7 @@
   },
   {
     "code": "41407",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDU RULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDU RULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLARIN BİRİKMİŞ DEĞERLEME FARKLARI"
   },
   {
     "code": "41408",
@@ -22953,7 +23093,7 @@
   },
   {
     "code": "41412",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN FİNANSAL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN FİNANSAL VARLIKLAR BEKLENEN ZARAR KARŞILIĞI"
   },
   {
     "code": "41419",
@@ -22981,11 +23121,11 @@
   },
   {
     "code": "415031",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "41504",
-    "name": "MADDİ VE MADDİ OLMAYAN DURAN VARLIKLAR YENİDEN DEĞERLEME"
+    "name": "MADDİ VE MADDİ OLMAYAN DURAN VARLIKLAR YENİDEN DEĞERLEME FARKLARI"
   },
   {
     "code": "415040",
@@ -23005,7 +23145,7 @@
   },
   {
     "code": "41505",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE B İRLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR BEDELSİZ HİSSE SENETLERİ"
   },
   {
     "code": "41506",
@@ -23013,7 +23153,7 @@
   },
   {
     "code": "41507",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDU RULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDU RULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLARIN BİRİKMİŞ DEĞERLEME FARKLARI"
   },
   {
     "code": "41509",
@@ -23029,7 +23169,7 @@
   },
   {
     "code": "41512",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN FİNANSAL VARLIKLAR BEKLENEN ZARAR KARŞILIĞI"
   },
   {
     "code": "41519",
@@ -23137,7 +23277,7 @@
   },
   {
     "code": "500",
-    "name": "İSKONTOLU İŞLEMLERDEN ALINAN K ÂR PAYLARI - T.P."
+    "name": "İSKONTOLU İŞLEMLERDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "50001",
@@ -23146,6 +23286,10 @@
   {
     "code": "500010",
     "name": "ÖZKAYNAKLARDAN"
+  },
+  {
+    "code": "500012",
+    "name": "KATILMA HESAPLARINDAN"
   },
   {
     "code": "500013",
@@ -24425,7 +24569,7 @@
   },
   {
     "code": "526",
-    "name": "MALİ KESİME KULLANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KÂR PAYLARI"
+    "name": "MALİ KESİME KULLANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "52600",
@@ -24509,7 +24653,7 @@
   },
   {
     "code": "527",
-    "name": "MALİ KESİME KULLANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KÂR PAYLARI"
+    "name": "MALİ KESİME KULLANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "52700",
@@ -24729,7 +24873,7 @@
   },
   {
     "code": "530",
-    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERİNDEN ALINAN"
+    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "53001",
@@ -24813,7 +24957,7 @@
   },
   {
     "code": "531",
-    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERİNDEN ALINAN"
+    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "53101",
@@ -25113,7 +25257,7 @@
   },
   {
     "code": "534",
-    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI -"
+    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "53401",
@@ -25197,7 +25341,7 @@
   },
   {
     "code": "535",
-    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI -"
+    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERİNDEN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "53501",
@@ -25449,7 +25593,7 @@
   },
   {
     "code": "538",
-    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN KÂR PAYLARI -"
+    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "53801",
@@ -25589,7 +25733,7 @@
   },
   {
     "code": "539",
-    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN KÂR PAYLARI"
+    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "53901",
@@ -25729,7 +25873,7 @@
   },
   {
     "code": "540",
-    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN KÂR PAYLARI -"
+    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "54001",
@@ -25813,7 +25957,7 @@
   },
   {
     "code": "541",
-    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN KÂR PAYLARI -"
+    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "54101",
@@ -25897,7 +26041,7 @@
   },
   {
     "code": "546",
-    "name": "MALİ KESİME KULLANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN"
+    "name": "MALİ KESİME KULLANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KÂR PAYLARI - T.P."
   },
   {
     "code": "54605",
@@ -25981,7 +26125,7 @@
   },
   {
     "code": "547",
-    "name": "MALİ KESİME KULLANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN"
+    "name": "MALİ KESİME KULLANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KÂR PAYLARI - Y.P."
   },
   {
     "code": "54705",
@@ -26201,7 +26345,7 @@
   },
   {
     "code": "550",
-    "name": "YENİDEN YAPILANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KAR PAYLARI - T."
+    "name": "YENİDEN YAPILANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KAR PAYLARI - T. P."
   },
   {
     "code": "55000",
@@ -26213,7 +26357,7 @@
   },
   {
     "code": "551",
-    "name": "YENİDEN YAPILANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KAR PAYLARI - Y."
+    "name": "YENİDEN YAPILANDIRILAN KISA VADELİ KREDİLERDEN ALINAN KAR PAYLARI - Y. P."
   },
   {
     "code": "55100",
@@ -26225,7 +26369,7 @@
   },
   {
     "code": "554",
-    "name": "YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KAR"
+    "name": "YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KAR PAYLARI – T. P."
   },
   {
     "code": "55400",
@@ -26237,7 +26381,7 @@
   },
   {
     "code": "555",
-    "name": "YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KAR"
+    "name": "YENİDEN YAPILANDIRILAN ORTA VE UZUN VADELİ KREDİLERDEN ALINAN KAR PAYLARI – Y. P."
   },
   {
     "code": "55500",
@@ -26405,7 +26549,7 @@
   },
   {
     "code": "58001",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RA YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RAYANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "580014",
@@ -26417,7 +26561,7 @@
   },
   {
     "code": "58002",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KA PSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "580024",
@@ -26457,7 +26601,7 @@
   },
   {
     "code": "58101",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RA YANSITILMASI SEÇENEĞİ"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RAYANSITILMASI SEÇENEĞİ KULLANILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "581014",
@@ -26469,7 +26613,7 @@
   },
   {
     "code": "58102",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KA PSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "581024",
@@ -26573,11 +26717,11 @@
   },
   {
     "code": "615",
-    "name": "KIYMETLİ MADEN DEPO HESAPLARI - KATILMA HESAPLARINA VERİLEN KÂR"
+    "name": "KIYMETLİ MADEN DEPO HESAPLARI - KATILMA HESAPLARINA VERİLEN KÂR PAYLARI- Y.P."
   },
   {
     "code": "617",
-    "name": "KATILMA HESAPLARINA VERİLEN KÂR PAYLARI – YATIRIM VEKÂLETİ HAVUZLARI"
+    "name": "KATILMA HESAPLARINA VERİLEN KÂR PAYLARI – YATIRIM VEKÂLETİ HAVUZLARI PAYLARI – KIYMETLİ MADEN – Y.P."
   },
   {
     "code": "61703",
@@ -26617,7 +26761,7 @@
   },
   {
     "code": "62000",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "620000",
@@ -26653,7 +26797,7 @@
   },
   {
     "code": "62010",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "620100",
@@ -26689,7 +26833,7 @@
   },
   {
     "code": "62020",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "620200",
@@ -26833,7 +26977,7 @@
   },
   {
     "code": "62061",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "620610",
@@ -26981,7 +27125,7 @@
   },
   {
     "code": "62100",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "621000",
@@ -27017,7 +27161,7 @@
   },
   {
     "code": "62110",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "621100",
@@ -27053,7 +27197,7 @@
   },
   {
     "code": "62120",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "621200",
@@ -27197,7 +27341,7 @@
   },
   {
     "code": "62161",
-    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ - ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "621610",
@@ -27345,7 +27489,7 @@
   },
   {
     "code": "62200",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "622000",
@@ -27381,7 +27525,7 @@
   },
   {
     "code": "62210",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "622100",
@@ -27417,7 +27561,7 @@
   },
   {
     "code": "62220",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "622200",
@@ -27561,7 +27705,7 @@
   },
   {
     "code": "62261",
-    "name": "BİR AY VE DAHA UZUN VADELİ- ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR AY VE DAHA UZUN VADELİ- ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "622610",
@@ -27673,7 +27817,7 @@
   },
   {
     "code": "62300",
-    "name": "BİR AY VADELİ"
+    "name": "BİR AYVADELİ"
   },
   {
     "code": "623000",
@@ -27709,7 +27853,7 @@
   },
   {
     "code": "62310",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "623100",
@@ -27745,7 +27889,7 @@
   },
   {
     "code": "62320",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "623200",
@@ -27889,7 +28033,7 @@
   },
   {
     "code": "62361",
-    "name": "BİR AY VE DAHA UZUN VADELİ- ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR AY VE DAHA UZUN VADELİ- ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "623610",
@@ -27997,7 +28141,7 @@
   },
   {
     "code": "625",
-    "name": "KATILMA HESAPLARINA VERİLEN KAR PAYLARI – ÖZEL FON HAVUZLARI –"
+    "name": "KATILMA HESAPLARINA VERİLEN KAR PAYLARI – ÖZEL FON HAVUZLARI – KIYMETLİ MADEN – Y.P."
   },
   {
     "code": "62500",
@@ -28045,7 +28189,7 @@
   },
   {
     "code": "62600",
-    "name": "BİR AYA KADAR VADELİ (1 AY DAHİL)"
+    "name": "BİR AYA KADAR VADELİ (1 AYDAHİL)"
   },
   {
     "code": "626002",
@@ -28073,7 +28217,7 @@
   },
   {
     "code": "62610",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "626102",
@@ -28101,7 +28245,7 @@
   },
   {
     "code": "62620",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "626202",
@@ -28213,7 +28357,7 @@
   },
   {
     "code": "62661",
-    "name": "BİR YIL VE DAHA UZUN VADELİ – ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ – ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "626612",
@@ -28329,7 +28473,7 @@
   },
   {
     "code": "62700",
-    "name": "BİR AYA KADAR VADELİ (1 AY DAHİL)"
+    "name": "BİR AYA KADAR VADELİ (1 AYDAHİL)"
   },
   {
     "code": "627002",
@@ -28357,7 +28501,7 @@
   },
   {
     "code": "62710",
-    "name": "ÜÇ AYA KADAR VADELİ (3 AY DAHİL)"
+    "name": "ÜÇAYA KADAR VADELİ (3 AYDAHİL)"
   },
   {
     "code": "627102",
@@ -28385,7 +28529,7 @@
   },
   {
     "code": "62720",
-    "name": "ALTI AYA KADAR VADELİ (6 AY DAHİL)"
+    "name": "ALTI AYA KADAR VADELİ (6 AYDAHİL)"
   },
   {
     "code": "627202",
@@ -28497,7 +28641,7 @@
   },
   {
     "code": "62761",
-    "name": "BİR YIL VE DAHA UZUN VADELİ – ÜÇ AYLIK KÂR PAYI ÖDEMELİ"
+    "name": "BİR YIL VE DAHA UZUN VADELİ – ÜÇAYLIK KÂR PAYI ÖDEMELİ"
   },
   {
     "code": "627612",
@@ -28625,11 +28769,11 @@
   },
   {
     "code": "640",
-    "name": "TÜRKİYE CUMHURİYET MERKEZ BANKASI KREDİLERİNE VERİLEN KÂR PAYLARI -"
+    "name": "TÜRKİYE CUMHURİYET MERKEZ BANKASI KREDİLERİNE VERİLEN KÂR PAYLARI - T.P."
   },
   {
     "code": "641",
-    "name": "TÜRKİYE CUMHURİYET MERKEZ BANKASI KREDİLERİNE VERİLEN KÂR PAYLARI -"
+    "name": "TÜRKİYE CUMHURİYET MERKEZ BANKASI KREDİLERİNE VERİLEN KÂR PAYLARI - Y.P."
   },
   {
     "code": "642",
@@ -28657,7 +28801,7 @@
   },
   {
     "code": "644",
-    "name": "YURTİÇİ DİĞER KURULUŞLARDAN KULLANILAN KREDİLERE VERİLEN KÂR"
+    "name": "YURTİÇİ DİĞER KURULUŞLARDAN KULLANILAN KREDİLERE VERİLEN KÂR PAYLARI - T.P"
   },
   {
     "code": "64400",
@@ -28669,7 +28813,7 @@
   },
   {
     "code": "645",
-    "name": "YURTİÇİ DİĞER KURULUŞLARDAN KULLANILAN KREDİLERE VERİLEN KÂR"
+    "name": "YURTİÇİ DİĞER KURULUŞLARDAN KULLANILAN KREDİLERE VERİLEN KÂR PAYLARI - Y.P"
   },
   {
     "code": "64500",
@@ -28785,7 +28929,7 @@
   },
   {
     "code": "659",
-    "name": "YURTDIŞINDAN KULLANILAN KIYMETLİ MADEN KREDİLERİNE VERİLEN KÂR"
+    "name": "YURTDIŞINDAN KULLANILAN KIYMETLİ MADEN KREDİLERİNE VERİLEN KÂR PAYLARI – Y.P."
   },
   {
     "code": "65900",
@@ -28917,11 +29061,11 @@
   },
   {
     "code": "720",
-    "name": "KISA VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR -"
+    "name": "KISA VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "721",
-    "name": "KISA VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR -"
+    "name": "KISA VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "723",
@@ -28937,7 +29081,7 @@
   },
   {
     "code": "726",
-    "name": "MALİ KESİME KULLANDIRILAN KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR"
+    "name": "MALİ KESİME KULLANDIRILAN KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "72600",
@@ -28949,7 +29093,7 @@
   },
   {
     "code": "727",
-    "name": "MALİ KESİME KULLANDIRILAN KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR"
+    "name": "MALİ KESİME KULLANDIRILAN KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "72700",
@@ -28985,43 +29129,43 @@
   },
   {
     "code": "730",
-    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERDEN ALINAN"
+    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "731",
-    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERDEN ALINAN"
+    "name": "ORTA VE UZUN VADELİ İHRACAT GARANTİLİ YATIRIM KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "734",
-    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "735",
-    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ DİĞER YATIRIM KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "736",
-    "name": "ORTA VE UZUN VADELİ İŞLETME KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ İŞLETME KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "737",
-    "name": "ORTA VE UZUN VADELİ İŞLETME KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ İŞLETME KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "738",
-    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "739",
-    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ İHRACAT VE DİĞER KREDİLERDEN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "740",
-    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR - T.P."
   },
   {
     "code": "741",
-    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE"
+    "name": "ORTA VE UZUN VADELİ ORTAKLIK FİNANSMANINDAN ALINAN ÜCRET VE KOMİSYONLAR - Y.P."
   },
   {
     "code": "744",
@@ -29061,7 +29205,7 @@
   },
   {
     "code": "748003",
-    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ"
+    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "748004",
@@ -29105,7 +29249,7 @@
   },
   {
     "code": "749003",
-    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ"
+    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "749004",
@@ -29889,7 +30033,7 @@
   },
   {
     "code": "77111",
-    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANS AL KİRALAMA ALACAKLARI ANAPARA KUR"
+    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANS ALKİRALAMA ALACAKLARI ANAPARA KUR ARTIŞLARI"
   },
   {
     "code": "77199",
@@ -29921,11 +30065,11 @@
   },
   {
     "code": "78002",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "78003",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KA PSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "78009",
@@ -29945,11 +30089,11 @@
   },
   {
     "code": "78102",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARARA YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "78103",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KA PSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLERDEN"
   },
   {
     "code": "78109",
@@ -30013,7 +30157,7 @@
   },
   {
     "code": "790050",
-    "name": "İŞTİRAK, BAĞLI ORTAKLIK VE DİĞER ORTAKLIKLAR SATIŞINDAN ELDE EDİLEN"
+    "name": "İŞTİRAK, BAĞLI ORTAKLIK VE DİĞER ORTAKLIKLAR SATIŞINDAN ELDE EDİLEN GELİRLER"
   },
   {
     "code": "790051",
@@ -30113,7 +30257,7 @@
   },
   {
     "code": "791050",
-    "name": "İŞTİRAK, BAĞLI ORTAKLIK VE DİĞER ORTAKLIKLAR SATIŞINDAN ELDE EDİLEN"
+    "name": "İŞTİRAK, BAĞLI ORTAKLIK VE DİĞER ORTAKLIKLAR SATIŞINDAN ELDE EDİLEN GELİRLER"
   },
   {
     "code": "791051",
@@ -30249,7 +30393,7 @@
   },
   {
     "code": "81012",
-    "name": "İŞ GÖREMEZLİK GİDERLERİ"
+    "name": "İŞGÖREMEZLİK GİDERLERİ"
   },
   {
     "code": "81099",
@@ -30309,7 +30453,7 @@
   },
   {
     "code": "81112",
-    "name": "İŞ GÖREMEZLİK GİDERLERİ"
+    "name": "İŞGÖREMEZLİK GİDERLERİ"
   },
   {
     "code": "81199",
@@ -30453,11 +30597,11 @@
   },
   {
     "code": "8200301",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "820031",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE Bİ RLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR DEĞER DÜŞÜŞ GİDERLERİ"
   },
   {
     "code": "8200310",
@@ -30473,7 +30617,7 @@
   },
   {
     "code": "820032",
-    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL"
+    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL KARŞILIKLARI"
   },
   {
     "code": "820033",
@@ -30529,7 +30673,7 @@
   },
   {
     "code": "820040",
-    "name": "BİRİNCİ AŞAMA (12 AY BEKLENEN ZARAR KARŞILIĞI)"
+    "name": "BİRİNCİ AŞAMA (12 AYBEKLENEN ZARAR KARŞILIĞI)"
   },
   {
     "code": "8200400",
@@ -30661,11 +30805,11 @@
   },
   {
     "code": "820053",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDURULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR"
   },
   {
     "code": "82006",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR A YANSITILAN KREDİLER DEĞER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARAR AYANSITILAN KREDİLER DEĞER DÜŞÜŞ KARŞILIĞI GİDERLERİ"
   },
   {
     "code": "82007",
@@ -30809,11 +30953,11 @@
   },
   {
     "code": "8210301",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI DİĞER KAPSAMLI GELİRE YANSITILAN MENKUL DEĞERLER"
   },
   {
     "code": "821031",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE Bİ RLİKTE KONTROL EDİLEN ORTAKLIKLAR"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE BİRLİKTE KONTROL EDİLEN ORTAKLIKLAR DEĞER DÜŞÜŞ KARŞILIĞI GİDERLERİ"
   },
   {
     "code": "8210310",
@@ -30829,7 +30973,7 @@
   },
   {
     "code": "821032",
-    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL"
+    "name": "TAZMİN EDİLMEMİŞ VE NAKDE DÖNÜŞMEMİŞ GAYRİNAKDİ KREDİLER ÖZEL KARŞILIKLARI"
   },
   {
     "code": "821033",
@@ -30881,7 +31025,7 @@
   },
   {
     "code": "821040",
-    "name": "BİRİNCİ AŞAMA (12 AY BEKLENEN ZARAR KARŞILIĞI)"
+    "name": "BİRİNCİ AŞAMA (12 AYBEKLENEN ZARAR KARŞILIĞI)"
   },
   {
     "code": "8210400",
@@ -31009,11 +31153,11 @@
   },
   {
     "code": "821053",
-    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDUR ULAN FAALİYETLERE İLİŞKİN DURAN"
+    "name": "SATIŞ AMAÇLI ELDE TUTULAN VE DURDUR ULAN FAALİYETLERE İLİŞKİN DURAN VARLIKLAR"
   },
   {
     "code": "82106",
-    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RA YANSITILAN KREDİLER DEĞER"
+    "name": "GERÇEĞE UYGUN DEĞER FARKI KÂR/ZARA RAYANSITILAN KREDİLER DEĞER DÜŞÜŞ KARŞILIĞI GİDERLERİ"
   },
   {
     "code": "82107",
@@ -31073,7 +31217,7 @@
   },
   {
     "code": "83009",
-    "name": "GELİR VERGİSİ KANUNU’NUN 94. MAD. A.8 VE A.15 NOLU BENTLERİ UYARINCA"
+    "name": "GELİR VERGİSİ KANUNU’NUN 94. MAD. A.8 VE A.15 NOLU BENTLERİ UYARINCA YAPILAN TEVKİFATLAR İÇİN AYRILAN KARŞILIKLAR"
   },
   {
     "code": "83010",
@@ -31373,7 +31517,7 @@
   },
   {
     "code": "86111",
-    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANSAL KİRALAMA ALACAKLARI ANAPARA KUR"
+    "name": "DÖVİZE ENDEKSLİ KREDİLER VE FİNANSAL KİRALAMA ALACAKLARI ANAPARA KUR AZALIŞLARI"
   },
   {
     "code": "861110",
@@ -32013,7 +32157,7 @@
   },
   {
     "code": "88004",
-    "name": "ISITMA AYDINLATMA VE SU GİDERLERİ"
+    "name": "ISITMA AYDINLATMA VE SUGİDERLERİ"
   },
   {
     "code": "880040",
@@ -32025,7 +32169,7 @@
   },
   {
     "code": "880042",
-    "name": "SU GİDERLERİ"
+    "name": "SUGİDERLERİ"
   },
   {
     "code": "88005",
@@ -32157,7 +32301,7 @@
   },
   {
     "code": "88019",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETLERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETLERİNE İLİŞKİN PROMOSYON UYGULAMALARI GİDERLERİ"
   },
   {
     "code": "88099",
@@ -32185,7 +32329,7 @@
   },
   {
     "code": "88104",
-    "name": "ISITMA AYDINLATMA VE SU GİDERLERİ"
+    "name": "ISITMA AYDINLATMA VE SUGİDERLERİ"
   },
   {
     "code": "88105",
@@ -32245,7 +32389,7 @@
   },
   {
     "code": "88119",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETLERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZMETLERİNE İLİŞKİN PROMOSYON UYGULAMALARI GİDERLERİ"
   },
   {
     "code": "88199",
@@ -32581,19 +32725,19 @@
   },
   {
     "code": "91230",
-    "name": "LİMİT İÇİ İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE"
+    "name": "LİMİT İÇİ İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "91231",
-    "name": "LİMİT DIŞI İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE"
+    "name": "LİMİT DIŞI İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "91232",
-    "name": "LİMİT İÇİ İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE"
+    "name": "LİMİT İÇİ İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "91233",
-    "name": "LİMİT DIŞI İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE"
+    "name": "LİMİT DIŞI İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI"
   },
   {
     "code": "91240",
@@ -32653,11 +32797,11 @@
   },
   {
     "code": "91330",
-    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ"
+    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI –İNŞAAT MÜHENDİSLİK İŞLERİ"
   },
   {
     "code": "91331",
-    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ"
+    "name": "İSTİHKAKLARDAN İŞVERENCE YAPILAN KESİNTİLERİN MÜTEAHHİTE ÖDENMESİ İÇİN DÜZENLENEN TEMİNAT MEKTUPLARI -DİĞER"
   },
   {
     "code": "91340",
@@ -35697,7 +35841,7 @@
   },
   {
     "code": "96201",
-    "name": "RİSKİ BANKAYA RÜCU EDİLEBİLEN BANKAM IZ AKTİF DEĞERLERİ İLE İLGİLİ SATIŞ"
+    "name": "RİSKİ BANKAYA RÜCU EDİLEBİLEN BANKAM IZAKTİF DEĞERLERİ İLE İLGİLİ SATIŞ İŞLEMLERİNDEN"
   },
   {
     "code": "96202",
@@ -35733,7 +35877,7 @@
   },
   {
     "code": "96301",
-    "name": "RİSKİ BANKAYA RÜCU EDİLEBİLEN BANKAMIZ AKTİF DEĞERLERİ İLE İLGİLİ SATIŞ"
+    "name": "RİSKİ BANKAYA RÜCU EDİLEBİLEN BANKAMIZ AKTİF DEĞERLERİ İLE İLGİLİ SATIŞ İŞLEMLERİNDEN"
   },
   {
     "code": "96302",
@@ -35913,7 +36057,7 @@
   },
   {
     "code": "96440",
-    "name": "OPSİYON ALIM SATIM İŞLEMLERİ"
+    "name": "OPSİYON ALIM SATIM İŞLEMLERİ SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "964400",
@@ -35921,7 +36065,7 @@
   },
   {
     "code": "964401",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "964402",
@@ -35929,7 +36073,7 @@
   },
   {
     "code": "964403",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "964404",
@@ -35937,7 +36081,7 @@
   },
   {
     "code": "964405",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "964406",
@@ -35945,7 +36089,7 @@
   },
   {
     "code": "964407",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "964408",
@@ -35953,7 +36097,7 @@
   },
   {
     "code": "964409",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "964410",
@@ -35961,7 +36105,7 @@
   },
   {
     "code": "964411",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "964412",
@@ -35969,7 +36113,7 @@
   },
   {
     "code": "964413",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "964414",
@@ -35977,7 +36121,7 @@
   },
   {
     "code": "964415",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "964418",
@@ -35985,7 +36129,7 @@
   },
   {
     "code": "964419",
-    "name": "DİĞER SATIM OPSİYONLARI"
+    "name": "DİĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "964420",
@@ -36177,7 +36321,7 @@
   },
   {
     "code": "96540",
-    "name": "OPSİYON ALIM SATIM İŞLEMLERİ"
+    "name": "OPSİYON ALIM SATIM İŞLEMLERİ SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "965400",
@@ -36185,7 +36329,7 @@
   },
   {
     "code": "965401",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "965402",
@@ -36193,7 +36337,7 @@
   },
   {
     "code": "965403",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "965404",
@@ -36201,7 +36345,7 @@
   },
   {
     "code": "965405",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "965406",
@@ -36209,7 +36353,7 @@
   },
   {
     "code": "965407",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "965408",
@@ -36217,7 +36361,7 @@
   },
   {
     "code": "965409",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "965410",
@@ -36225,7 +36369,7 @@
   },
   {
     "code": "965411",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "965412",
@@ -36233,7 +36377,7 @@
   },
   {
     "code": "965413",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "965414",
@@ -36241,7 +36385,7 @@
   },
   {
     "code": "965415",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "965418",
@@ -36249,7 +36393,7 @@
   },
   {
     "code": "965419",
-    "name": "DİĞER SATIM OPSİYONLARI"
+    "name": "DİĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "965420",
@@ -36425,7 +36569,7 @@
   },
   {
     "code": "96640",
-    "name": "OPSİYON ALIM SATIM İŞLEMLERİ"
+    "name": "OPSİYON ALIM SATIM İŞLEMLERİ SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "966400",
@@ -36433,7 +36577,7 @@
   },
   {
     "code": "966401",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "966402",
@@ -36441,7 +36585,7 @@
   },
   {
     "code": "966403",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "966404",
@@ -36449,7 +36593,7 @@
   },
   {
     "code": "966405",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "966406",
@@ -36457,7 +36601,7 @@
   },
   {
     "code": "966407",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "966408",
@@ -36465,7 +36609,7 @@
   },
   {
     "code": "966409",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "966410",
@@ -36473,7 +36617,7 @@
   },
   {
     "code": "966411",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "966412",
@@ -36481,7 +36625,7 @@
   },
   {
     "code": "966413",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "966414",
@@ -36489,7 +36633,7 @@
   },
   {
     "code": "966415",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "966418",
@@ -36497,7 +36641,7 @@
   },
   {
     "code": "966419",
-    "name": "DİĞER SATIM OPSİYONLARI"
+    "name": "DİĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "966420",
@@ -36681,7 +36825,7 @@
   },
   {
     "code": "96740",
-    "name": "OPSİYON ALIM SATIM İŞLEMLERİ"
+    "name": "OPSİYON ALIM SATIM İŞLEMLERİ SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "967400",
@@ -36689,7 +36833,7 @@
   },
   {
     "code": "967401",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "967402",
@@ -36697,7 +36841,7 @@
   },
   {
     "code": "967403",
-    "name": "DÖVİZ SATIM OPSİYONLARI"
+    "name": "DÖVİZ SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "967404",
@@ -36705,7 +36849,7 @@
   },
   {
     "code": "967405",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "967406",
@@ -36713,7 +36857,7 @@
   },
   {
     "code": "967407",
-    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI"
+    "name": "KİRA SERTİFİKALARI SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "967408",
@@ -36721,7 +36865,7 @@
   },
   {
     "code": "967409",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "967410",
@@ -36729,7 +36873,7 @@
   },
   {
     "code": "967411",
-    "name": "MENKUL DEĞER SATIM OPSİYONLARI"
+    "name": "MENKUL DEĞER SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "967412",
@@ -36737,7 +36881,7 @@
   },
   {
     "code": "967413",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "967414",
@@ -36745,7 +36889,7 @@
   },
   {
     "code": "967415",
-    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI"
+    "name": "KIYMETLİ MADEN SATIM OPSİYONLARI SATICI (KEŞİDECİ) TARAF"
   },
   {
     "code": "967418",
@@ -36753,7 +36897,7 @@
   },
   {
     "code": "967419",
-    "name": "DİĞER SATIM OPSİYONLARI"
+    "name": "DİĞER SATIM OPSİYONLARI ALICI (LEHDAR) TARAF"
   },
   {
     "code": "967420",
@@ -36785,7 +36929,7 @@
   },
   {
     "code": "97001",
-    "name": "MÜŞTERİ TARAFINDAN TEMİN EDİLEN PREFİNANSMAN KREDİLERİNDEN"
+    "name": "MÜŞTERİ TARAFINDAN TEMİN EDİLEN PREFİNANSMAN KREDİLERİNDEN ALACAKLAR"
   },
   {
     "code": "971",
@@ -36797,7 +36941,7 @@
   },
   {
     "code": "97101",
-    "name": "MÜŞTERİ TARAFINDAN TEMİN EDİLEN PREFİNANSMANKREDİLERİNDEN"
+    "name": "MÜŞTERİ TARAFINDAN TEMİN EDİLEN PREFİNANSMANKREDİLERİNDEN ALACAKLAR"
   },
   {
     "code": "972",
@@ -36825,7 +36969,7 @@
   },
   {
     "code": "980",
-    "name": "TAAHHÜTLERDEN BORÇLAR - T.P."
+    "name": "TAAHHÜTLERDEN BORÇLAR - T.P. CAYILAMAZ TAAHHÜTLER"
   },
   {
     "code": "98000",
@@ -36865,7 +37009,7 @@
   },
   {
     "code": "98002",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE DİĞER ORTAKLIKLAR SERMAYESİNE"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE DİĞER ORTAKLIKLAR SERMAYESİNE İŞTİRAK TAAHHÜTLERİMİZ"
   },
   {
     "code": "98003",
@@ -36901,7 +37045,7 @@
   },
   {
     "code": "98011",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZME TLERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZME TLERİNE İLİŞKİN PROMOSYON UYGULAMALARI TAAHHÜTLERİ"
   },
   {
     "code": "98020",
@@ -36913,7 +37057,7 @@
   },
   {
     "code": "98049",
-    "name": "DİĞER CAYILAMAZ TAAHHÜTLERİMİZ"
+    "name": "DİĞER CAYILAMAZ TAAHHÜTLERİMİZ CAYILABİLİR TAAHHÜTLER"
   },
   {
     "code": "98050",
@@ -36925,7 +37069,7 @@
   },
   {
     "code": "981",
-    "name": "TAAHHÜTLERDEN BORÇLAR - Y.P."
+    "name": "TAAHHÜTLERDEN BORÇLAR - Y.P. CAYILAMAZ TAAHHÜTLER"
   },
   {
     "code": "98100",
@@ -36965,7 +37109,7 @@
   },
   {
     "code": "98102",
-    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE DİĞER ORTAKLIKLAR SERMAYESİNE"
+    "name": "İŞTİRAKLER, BAĞLI ORTAKLIKLAR VE DİĞER ORTAKLIKLAR SERMAYESİNE İŞTİRAK TAAHHÜTLERİMİZ"
   },
   {
     "code": "98103",
@@ -36993,7 +37137,7 @@
   },
   {
     "code": "98111",
-    "name": "KREDİ KARTLARI VE BANKACILIK HİZME TLERİNE İLİŞKİN PROMOSYON"
+    "name": "KREDİ KARTLARI VE BANKACILIK HİZME TLERİNE İLİŞKİN PROMOSYON UYGULAMALARI TAAHHÜTLERİ"
   },
   {
     "code": "98120",
@@ -37005,7 +37149,7 @@
   },
   {
     "code": "98149",
-    "name": "DİĞER CAYILAMAZ TAAHHÜTLERİMİZ"
+    "name": "DİĞER CAYILAMAZ TAAHHÜTLERİMİZ CAYILABİLİR TAAHHÜTLER"
   },
   {
     "code": "98150",
@@ -37185,7 +37329,7 @@
   },
   {
     "code": "986",
-    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN"
+    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN ALACAKLAR – T.P."
   },
   {
     "code": "98600",
@@ -37245,7 +37389,7 @@
   },
   {
     "code": "987",
-    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN"
+    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN ALACAKLAR – Y.P."
   },
   {
     "code": "98700",
@@ -37305,7 +37449,7 @@
   },
   {
     "code": "988",
-    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN"
+    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN BORÇLAR – T.P."
   },
   {
     "code": "98800",
@@ -37325,7 +37469,7 @@
   },
   {
     "code": "989",
-    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN"
+    "name": "GERİ ALIM VAADİ İLE SATIM VE GERİ SATIM VAADİ İLE ALIM İŞLEMLERİNDEN BORÇLAR – Y.P."
   },
   {
     "code": "98900",

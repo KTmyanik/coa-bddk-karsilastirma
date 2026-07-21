@@ -16,11 +16,107 @@ class BddkAccount:
     name: str
 
 
-ACCOUNT_LINE_RE = re.compile(r"^(\d+)\s+(.+?)\s*$")
 IZAHNAME_SPLIT_RE = re.compile(
     r"II\.?\s*Tekd[uü]zen\s+hesap\s+plan[ıi]\s+izahnamesi",
     re.IGNORECASE,
 )
+# Kod tek basina veya ad ile ayni satirda; kod icinde PDF kaynakli bosluk olabilir: "151 005"
+CODE_LINE_RE = re.compile(r"^(\d+(?:\s+\d+)*)(?:\s+(.*))?$")
+HEADER_MARKERS = (
+    "TEKDÜZEN HESAP",
+    "TEKDUZEN HESAP",
+    "KATILIM ESASINA GÖRE",
+    "KATILIM ESASINA GORE",
+    "PLANI VE İZAHNAMESİ",
+    "PLANI VE IZAHNAMESI",
+)
+HEADER_TAIL_RE = re.compile(
+    r"\s*(KATILIM ESASINA G[OÖ]RE.*|TEKD[UÜ]ZEN HESAP.*|PLANI VE [İI]ZAHNAMES[İI])\s*$",
+    re.IGNORECASE,
+)
+
+
+def _normalize_code(raw_code: str) -> str:
+    return re.sub(r"\s+", "", raw_code.strip())
+
+
+def _normalize_name(name: str) -> str:
+    name = re.sub(r"[ \t]+", " ", name).strip()
+    name = HEADER_TAIL_RE.sub("", name).strip()
+    tokens = name.split(" ")
+    if len(tokens) <= 1:
+        return name
+
+    short_words = {
+        "VE",
+        "ILE",
+        "İLE",
+        "YA",
+        "TE",
+        "MI",
+        "MU",
+        "T.P",
+        "T.P.",
+        "Y.P",
+        "Y.P.",
+        "TP",
+        "YP",
+        "-",
+        "–",
+    }
+    merged: list[str] = []
+    index = 0
+    while index < len(tokens):
+        token = tokens[index]
+        if index + 1 < len(tokens):
+            nxt = tokens[index + 1]
+            should_merge = False
+            if (
+                1 <= len(token) <= 2
+                and token.upper() not in short_words
+                and not token.endswith((".", "-", "–", ","))
+                and nxt.upper() not in short_words
+                and not nxt.startswith(("(", "-", "–"))
+                and re.fullmatch(r"[A-Za-zÀ-žİıŞşĞğÜüÖöÇçÂâ]+", token)
+            ):
+                should_merge = True
+            elif re.search(r"/[A-Za-zİıŞşĞğÜüÖöÇç]$", token) and nxt:
+                should_merge = True
+            if should_merge:
+                merged.append(token + nxt)
+                index += 2
+                continue
+        merged.append(token)
+        index += 1
+    return " ".join(merged)
+
+
+def _is_header_line(line: str) -> bool:
+    upper = line.upper()
+    if line.startswith("I."):
+        return True
+    if any(marker in upper for marker in HEADER_MARKERS):
+        return True
+    if "YÖNETMELİK" in upper and len(line) > 80:
+        return True
+    if "YONETMELIK" in upper and len(line) > 80:
+        return True
+    return False
+
+
+def _split_code_and_rest(line: str) -> tuple[str | None, str]:
+    """Return (code, rest). code=None means continuation / non-account line."""
+    match = CODE_LINE_RE.match(line)
+    if not match:
+        return None, line
+
+    code = _normalize_code(match.group(1))
+    rest = (match.group(2) or "").strip()
+
+    # Asiri uzun sayisal cop satirlari ele
+    if not code or len(code) > 14:
+        return None, line
+    return code, rest
 
 
 def parse_bddk_text(text: str) -> list[BddkAccount]:
@@ -30,31 +126,44 @@ def parse_bddk_text(text: str) -> list[BddkAccount]:
 
     accounts: list[BddkAccount] = []
     seen: set[str] = set()
+    pending_code: str | None = None
+    pending_name_parts: list[str] = []
+
+    def flush() -> None:
+        nonlocal pending_code, pending_name_parts
+        if not pending_code:
+            pending_name_parts = []
+            return
+        name = _normalize_name(" ".join(pending_name_parts))
+        if name and pending_code not in seen:
+            seen.add(pending_code)
+            accounts.append(BddkAccount(code=pending_code, name=name))
+        pending_code = None
+        pending_name_parts = []
 
     for raw_line in text.splitlines():
         line = raw_line.strip()
-        if not line or line.startswith("I."):
+        if not line:
             continue
-        if "TEKDÜZEN HESAP" in line.upper() or "TEKDUZEN HESAP" in line.upper():
-            continue
-        if "Yönetmelik" in line and len(line) > 80:
+        if _is_header_line(line):
             continue
 
-        match = ACCOUNT_LINE_RE.match(line)
-        if not match:
+        code, rest = _split_code_and_rest(line)
+
+        if code is None:
+            # Devam satiri: onceki hesabin adina ekle
+            if pending_code is not None:
+                pending_name_parts.append(rest)
             continue
 
-        code = match.group(1)
-        name = re.sub(r"\s+", " ", match.group(2).strip())
-        if not name or code in seen:
-            continue
-        # PDF obj / garbage filtre
-        if name.lower().endswith("obj") or name.startswith("/"):
-            continue
+        # Yeni hesap kodu geldi -> onceki hesabi kapat
+        flush()
+        pending_code = code
+        if rest:
+            pending_name_parts.append(rest)
+        # rest bos ise sonraki satirlarda ad gelecek
 
-        seen.add(code)
-        accounts.append(BddkAccount(code=code, name=name))
-
+    flush()
     return accounts
 
 
@@ -92,11 +201,7 @@ def fetch_bddk_from_url(url: str) -> list[BddkAccount]:
         disposition = (response.headers.get("Content-Disposition") or "").lower()
         raw = response.read()
 
-    is_pdf = (
-        "pdf" in content_type
-        or "pdf" in disposition
-        or raw[:4] == b"%PDF"
-    )
+    is_pdf = "pdf" in content_type or "pdf" in disposition or raw[:4] == b"%PDF"
     if is_pdf:
         text = _extract_pdf_text(raw)
         return parse_bddk_text(text)

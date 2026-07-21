@@ -148,5 +148,11 @@ EXE ile birlikte ayni klasorde su dosyalar kalmali:
 - `TAM_ESLESME`: Kod ve ad BDDK ile uyumlu
 - `KISMEN_ESLESME`: Kod eslesti, ad kismen uyumlu
 - `KOD_ESLESTI_ISIM_FARKLI`: Kod eslesti, ad farkli
-- `KOD_UZANTISI`: Banka alt hesap kodu, BDDK ust hesabi ile eslesti
-- `KOD_BULUNAMADI`: BDDK'da karsilik yok
+- `SADECE_BDDK`: Sadece BDDK/PDF tarafinda var
+- `SADECE_COA`: Sadece sorgu/COA tarafinda var
+
+Siralama: BDDK (PDF) dokumanindaki sira korunur. COA'da olup PDF'te olmayan kodlar,
+ust hesap hiyerarsisine gore uygun yere yerlestirilir.
+
+PDF parse: cok satira bolunmus hesap adlari birlestirilir; kod ile ad ayri satirdaysa
+eslestirilir; PDF'nin kod icine bastigi bosluklar temizlenir.
