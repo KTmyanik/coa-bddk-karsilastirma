@@ -5,6 +5,7 @@ from difflib import SequenceMatcher
 
 from bddk_loader import BddkAccount
 from config_loader import normalize_text
+from name_repair import repair_accounts
 from sql_loader import CoaRecord
 
 
@@ -35,6 +36,12 @@ class CoaComparator:
             names = sql_by_code.setdefault(record.code, [])
             if record.name not in names:
                 names.append(record.name)
+
+        # SQL'deki dogru yazilmis adlari sozluk olarak kullanip
+        # PDF kaynakli bosluk hatalarini (DAY ANAN, AYBEKLENEN vb.) onar
+        vocab_names = [name for names in sql_by_code.values() for name in names]
+        repaired = repair_accounts(self._bddk_accounts, vocab_names)
+        self._bddk_by_code = {account.code: account.name for account in repaired}
 
         ordered_codes = self._build_ordered_codes(set(sql_by_code.keys()))
         return [self._compare_code(code, sql_by_code) for code in ordered_codes]

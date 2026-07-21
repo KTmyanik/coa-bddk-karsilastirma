@@ -41,54 +41,16 @@ def _normalize_code(raw_code: str) -> str:
 
 
 def _normalize_name(name: str) -> str:
+    # Bosluk duzenle ve sayfa basligi kirintilarini temizle.
+    # Kelime birlestirme/bolme duzeltmeleri sozluk tabanli olarak
+    # name_repair modulunde yapilir (karsilastirma asamasinda).
     name = re.sub(r"[ \t]+", " ", name).strip()
     name = HEADER_TAIL_RE.sub("", name).strip()
-    tokens = name.split(" ")
-    if len(tokens) <= 1:
-        return name
-
-    short_words = {
-        "VE",
-        "ILE",
-        "İLE",
-        "YA",
-        "TE",
-        "MI",
-        "MU",
-        "T.P",
-        "T.P.",
-        "Y.P",
-        "Y.P.",
-        "TP",
-        "YP",
-        "-",
-        "–",
-    }
-    merged: list[str] = []
-    index = 0
-    while index < len(tokens):
-        token = tokens[index]
-        if index + 1 < len(tokens):
-            nxt = tokens[index + 1]
-            should_merge = False
-            if (
-                1 <= len(token) <= 2
-                and token.upper() not in short_words
-                and not token.endswith((".", "-", "–", ","))
-                and nxt.upper() not in short_words
-                and not nxt.startswith(("(", "-", "–"))
-                and re.fullmatch(r"[A-Za-zÀ-žİıŞşĞğÜüÖöÇçÂâ]+", token)
-            ):
-                should_merge = True
-            elif re.search(r"/[A-Za-zİıŞşĞğÜüÖöÇç]$", token) and nxt:
-                should_merge = True
-            if should_merge:
-                merged.append(token + nxt)
-                index += 2
-                continue
-        merged.append(token)
-        index += 1
-    return " ".join(merged)
+    # Parantez ici bosluklar ve bolunmus kisaltmalar
+    name = re.sub(r"\(\s+", "(", name)
+    name = re.sub(r"\s+\)", ")", name)
+    name = name.replace("T. P.", "T.P.").replace("Y. P.", "Y.P.")
+    return name
 
 
 def _is_header_line(line: str) -> bool:
@@ -144,6 +106,10 @@ def parse_bddk_text(text: str) -> list[BddkAccount]:
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line:
+            # Ad zaten toplandiysa bos satir hesabin bittigini gosterir;
+            # boylece sonraki baslik satirlari ada yapismaz.
+            if pending_code is not None and pending_name_parts:
+                flush()
             continue
         if _is_header_line(line):
             continue
