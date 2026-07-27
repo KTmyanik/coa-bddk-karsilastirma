@@ -4,9 +4,15 @@ from dataclasses import dataclass
 from difflib import SequenceMatcher
 
 from bddk_loader import BddkAccount
-from config_loader import normalize_text
+from config_loader import normalize_for_exact, normalize_text
 from name_repair import repair_accounts
 from sql_loader import CoaRecord
+
+# Benzerlik baremi (SequenceMatcher ratio):
+# >= PARTIAL_THRESHOLD -> KISMEN_ESLESME
+# <  PARTIAL_THRESHOLD -> KOD_ESLESTI_ISIM_FARKLI
+# TAM_ESLESME sadece normalize_for_exact ile birebir (%100) esitlikte.
+PARTIAL_THRESHOLD = 0.72
 
 
 @dataclass(frozen=True)
@@ -141,12 +147,14 @@ class CoaComparator:
         bddk_name: str,
         sql_names: list[str],
     ) -> CompareResult:
-        normalized_bddk = normalize_text(bddk_name)
-        normalized_sql = [normalize_text(name) for name in sql_names]
+        exact_bddk = normalize_for_exact(bddk_name)
+        exact_sql = [normalize_for_exact(name) for name in sql_names]
+        soft_bddk = normalize_text(bddk_name)
+        soft_sql = [normalize_text(name) for name in sql_names]
 
         best_similarity = 0.0
-        for normalized_name in normalized_sql:
-            similarity = self._name_similarity(normalized_bddk, normalized_name)
+        for soft_name in soft_sql:
+            similarity = self._name_similarity(soft_bddk, soft_name)
             if similarity > best_similarity:
                 best_similarity = similarity
 
@@ -155,19 +163,30 @@ class CoaComparator:
         if len(sql_names) > 1:
             duplicate_note = f" Sorguda {len(sql_names)} farkli hesap adi var."
 
-        if not normalized_bddk:
+        if not exact_bddk and not soft_bddk:
             status = "KOD_ESLESTI_ISIM_YOK"
             detail = f"{code} kodu her iki tarafta var, BDDK adi bos.{duplicate_note}"
-        elif any(name == normalized_bddk for name in normalized_sql):
+        elif any(name == exact_bddk for name in exact_sql):
+            # Noktalama dahil birebir eslesme (Turkce karakter katlamasi serbest)
             status = "TAM_ESLESME"
             detail = f"{code} kodu ve adi her iki tarafta uyumlu.{duplicate_note}"
+            best_similarity = 1.0
+        elif soft_bddk and any(name == soft_bddk for name in soft_sql):
+            # Harfler ayni, noktalama / tire / virgul farkli
+            status = "KISMEN_ESLESME"
+            detail = (
+                f"{code} kodu eslesti, harfler uyumlu fakat noktalama veya "
+                f"yazim farki var.{duplicate_note}"
+            )
+            best_similarity = 1.0
         elif any(
-            name.startswith(normalized_bddk) or normalized_bddk.startswith(name)
-            for name in normalized_sql
+            name.startswith(soft_bddk) or soft_bddk.startswith(name)
+            for name in soft_sql
+            if name and soft_bddk
         ):
             status = "KISMEN_ESLESME"
             detail = f"{code} kodu eslesti, ad kismen uyumlu.{duplicate_note}"
-        elif best_similarity >= 0.72:
+        elif best_similarity >= PARTIAL_THRESHOLD:
             status = "KISMEN_ESLESME"
             detail = (
                 f"{code} kodu eslesti, ad benzerligi "

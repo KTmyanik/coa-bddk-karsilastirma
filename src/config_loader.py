@@ -65,12 +65,29 @@ def load_config(config_path: Path | None = None) -> AppConfig:
     )
 
 
-def normalize_text(value: str) -> str:
+def _fold_turkish(value: str) -> str:
     text = unicodedata.normalize("NFKD", value or "")
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
     text = text.upper()
     text = text.replace("İ", "I").replace("İ", "I")
+    return text
+
+
+def normalize_text(value: str) -> str:
+    """Benzerlik skoru icin: harf/rakam disindakileri atar (noktalama yok sayilir)."""
+    text = _fold_turkish(value)
     text = re.sub(r"[^A-Z0-9 ]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def normalize_for_exact(value: str) -> str:
+    """Tam eslesme icin: Turkce katlama + bosluk duzeni; noktalama korunur."""
+    text = _fold_turkish(value)
+    # En/em dash gibi varyantlari tek tireye indir
+    text = text.replace("–", "-").replace("—", "-").replace("−", "-")
+    # Harf/rakam/bosluk ve yaygin noktalama: , . - / ( ) & +
+    text = re.sub(r"[^A-Z0-9 ,.\-/()&+]+", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 

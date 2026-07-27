@@ -1,8 +1,8 @@
 """PDF'ten gelen hesap adlarindaki bosluk hatalarini sozluk tabanli duzeltir.
 
 PDF metin cikariminda iki tip hata olusur:
-- Kelime yanlis bolunmus: "DAY ANAN" -> "DAYANAN", "YAP ILANDIRILAN" -> "YAPILANDIRILAN"
-- Bosluk yanlis yere kaymis: "KÂR/ZARA RAYANSITILMASI" -> "KÂR/ZARARA YANSITILMASI"
+- Kelime yanlis bolunmus: "DAY ANAN" -> "DAYANAN", "FİNANS AL" -> "FİNANSAL"
+- Bosluk yanlis yere kaymis: "KÂ R/ZARARA" -> "KÂR/ZARARA"
 - Kelimeler yanlis birlesmis: "AYBEKLENEN" -> "AY BEKLENEN", "ÜÇAYA" -> "ÜÇ AYA"
 
 Sozluk, bankanin SQL COA verisindeki (dogru yazilmis) kelimelerden kurulur.
@@ -10,6 +10,7 @@ Bir duzeltme ancak sonucu tamamen sozlukteki kelimelerden olusuyorsa uygulanir.
 """
 from __future__ import annotations
 
+import re
 from typing import Iterable
 
 from bddk_loader import BddkAccount
@@ -17,6 +18,31 @@ from config_loader import normalize_text
 
 _MIN_VOCAB_SIZE = 50
 _MIN_SPLIT_TOKEN_LEN = 5
+
+# Kisa ama gercek baglac/kisaltmalar; bunlari "kirik parca" sayma
+_CONNECTORS = {
+    "VE",
+    "ILE",
+    "DE",
+    "DA",
+    "KI",
+    "MI",
+    "MU",
+    "YA",
+    "YE",
+    "TE",
+    "TA",
+    "NE",
+    "NI",
+    "NU",
+    "UC",
+    "AY",
+    "TP",
+    "YP",
+    "II",
+    "III",
+    "IV",
+}
 
 
 def build_vocab(names: Iterable[str]) -> set[str]:
@@ -38,6 +64,33 @@ def _part_known(part: str, vocab: set[str]) -> bool:
     if part.isdigit():
         return True
     return part in vocab
+
+
+def _is_punct_only(token: str) -> bool:
+    return bool(token) and not any(ch.isalnum() for ch in token)
+
+
+def _ends_or_starts_with_punct(left: str, right: str) -> bool:
+    if not left or not right:
+        return False
+    punct = set("-,.–—/")
+    return left[-1] in punct or right[0] in punct
+
+
+def _is_short_fragment(token: str) -> bool:
+    """PDF'in kiriktigi kisa parca mi? (AL, KA, KÂ, R/..., B, DU)."""
+    if not token or _is_punct_only(token) or "." in token:
+        return False
+    parts = _parts(token)
+    if len(parts) == 1 and 1 <= len(parts[0]) <= 2 and not parts[0].isdigit():
+        return parts[0] not in _CONNECTORS
+    # "R/ZARARA" gibi: slash oncesi cok kisa
+    if "/" in token:
+        left = token.split("/", 1)[0]
+        folded = re.sub(r"\s+", "", normalize_text(left))
+        if 1 <= len(folded) <= 2:
+            return True
+    return False
 
 
 def _needs_repair(token: str, vocab: set[str]) -> bool:
@@ -80,36 +133,61 @@ def _try_split(token: str, vocab: set[str]) -> tuple[str, str] | None:
     return None
 
 
+def _try_merge_pair(left: str, right: str, vocab: set[str]) -> str | None:
+    if _is_punct_only(left) or _is_punct_only(right):
+        return None
+    if _ends_or_starts_with_punct(left, right):
+        return None
+    merged = left + right
+    if _seq_strictly_known(merged, vocab):
+        return merged
+    return None
+
+
 def repair_name(name: str, vocab: set[str]) -> str:
     tokens = name.split()
     result: list[str] = []
     index = 0
     while index < len(tokens):
         token = tokens[index]
+        next_token = tokens[index + 1] if index + 1 < len(tokens) else None
+        prev_token = result[-1] if result else None
+
+        # 0) Firsatci birlestirme: "FİNANS AL", "KÂ R/ZARARA"
+        #    Parcalar tek basina "gecerli" gorunse bile kisa kirik parca varsa birlestir.
+        if next_token is not None and (
+            _is_short_fragment(token) or _is_short_fragment(next_token)
+        ):
+            merged = _try_merge_pair(token, next_token, vocab)
+            if merged is not None:
+                result.append(merged)
+                index += 2
+                continue
+
         if not _needs_repair(token, vocab):
             result.append(token)
             index += 1
             continue
 
-        next_token = tokens[index + 1] if index + 1 < len(tokens) else None
-        prev_token = result[-1] if result else None
-
         # 1) Sonraki ile birlestir: "DAY ANAN" -> "DAYANAN"
-        if next_token is not None and _seq_strictly_known(token + next_token, vocab):
-            result.append(token + next_token)
-            index += 2
-            continue
+        if next_token is not None:
+            merged = _try_merge_pair(token, next_token, vocab)
+            if merged is not None:
+                result.append(merged)
+                index += 2
+                continue
 
-        # 2) Onceki ile birlestir: "İŞLEMLERİ NDEN" -> "İŞLEMLERİNDEN",
-        #    "KÂR/ZARAR A" -> "KÂR/ZARARA"
-        if prev_token is not None and _seq_strictly_known(prev_token + token, vocab):
-            result[-1] = prev_token + token
-            index += 1
-            continue
+        # 2) Onceki ile birlestir: "İŞLEMLERİ NDEN" -> "İŞLEMLERİNDEN"
+        if prev_token is not None:
+            merged = _try_merge_pair(prev_token, token, vocab)
+            if merged is not None:
+                result[-1] = merged
+                index += 1
+                continue
 
         # 3) Sonraki ile birlestir + dogru yerden bol:
         #    "ZARA RAYANSITILMASI" -> "ZARARA YANSITILMASI"
-        if next_token is not None:
+        if next_token is not None and not _ends_or_starts_with_punct(token, next_token):
             split = _try_split(token + next_token, vocab)
             if split:
                 result.extend(split)
@@ -117,7 +195,7 @@ def repair_name(name: str, vocab: set[str]) -> str:
                 continue
 
         # 4) Onceki ile birlestir + dogru yerden bol
-        if prev_token is not None:
+        if prev_token is not None and not _ends_or_starts_with_punct(prev_token, token):
             split = _try_split(prev_token + token, vocab)
             if split:
                 result[-1] = split[0]

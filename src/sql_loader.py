@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pyodbc
 
-from config_loader import AppConfig, normalize_code, normalize_text
+from config_loader import AppConfig, normalize_code
 
 
 @dataclass(frozen=True)
@@ -57,7 +57,8 @@ def load_coa_from_sql(config: AppConfig) -> tuple[list[CoaRecord], str]:
     records: list[CoaRecord] = []
     for row in rows:
         code = normalize_code(row[code_index])
-        name = normalize_text(str(row[name_index] or ""))
+        # Tablodaki hesap adini oldugu gibi al (Turkce karakter / noktalama degistirme)
+        name = str(row[name_index] or "").strip()
         if not code:
             continue
         records.append(CoaRecord(code=code, name=name))
