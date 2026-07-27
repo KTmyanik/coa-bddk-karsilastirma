@@ -155,11 +155,19 @@ class CoaComparator:
         soft_bddk = normalize_text(bddk_name)
         soft_sql = [normalize_text(name) for name in sql_names]
 
+        # Benzerlik: bosluk/noktalama dahil (normalize_for_exact).
+        # %100 yalnizca asagida TAM_ESLESME icin zorlanir.
         best_similarity = 0.0
-        for soft_name in soft_sql:
-            similarity = self._name_similarity(soft_bddk, soft_name)
+        for exact_name in exact_sql:
+            similarity = self._name_similarity(exact_bddk, exact_name)
             if similarity > best_similarity:
                 best_similarity = similarity
+
+        soft_similarity = 0.0
+        for soft_name in soft_sql:
+            similarity = self._name_similarity(soft_bddk, soft_name)
+            if similarity > soft_similarity:
+                soft_similarity = similarity
 
         sql_name = " | ".join(sql_names)
         duplicate_note = ""
@@ -170,18 +178,15 @@ class CoaComparator:
             status = "KOD_ESLESTI_ISIM_YOK"
             detail = f"{code} kodu her iki tarafta var, BDDK adi bos.{duplicate_note}"
         elif any(name == exact_bddk for name in exact_sql):
-            # Noktalama dahil birebir eslesme (Turkce karakter katlamasi serbest)
             status = "TAM_ESLESME"
             detail = f"{code} kodu ve adi her iki tarafta uyumlu.{duplicate_note}"
             best_similarity = 1.0
         elif soft_bddk and any(name == soft_bddk for name in soft_sql):
-            # Harfler ayni, noktalama / tire / virgul farkli
             status = "KISMEN_ESLESME"
             detail = (
                 f"{code} kodu eslesti, harfler uyumlu fakat noktalama veya "
                 f"yazim farki var.{duplicate_note}"
             )
-            best_similarity = 1.0
         elif any(
             name.startswith(soft_bddk) or soft_bddk.startswith(name)
             for name in soft_sql
@@ -189,7 +194,7 @@ class CoaComparator:
         ):
             status = "KISMEN_ESLESME"
             detail = f"{code} kodu eslesti, ad kismen uyumlu.{duplicate_note}"
-        elif best_similarity >= PARTIAL_THRESHOLD:
+        elif best_similarity >= PARTIAL_THRESHOLD or soft_similarity >= PARTIAL_THRESHOLD:
             status = "KISMEN_ESLESME"
             detail = (
                 f"{code} kodu eslesti, ad benzerligi "
