@@ -77,6 +77,7 @@ class CompareApp(tk.Tk):
             "bddk_name",
             "sql_name",
             "status",
+            "match_status",
             "similarity",
             "detail",
         )
@@ -91,6 +92,7 @@ class CompareApp(tk.Tk):
             "bddk_name": "BDDK Adi",
             "sql_name": "Sorgu Hesap Adi",
             "status": "Durum",
+            "match_status": "Eslesme_Durum",
             "similarity": "Benzerlik",
             "detail": "Aciklama",
         }
@@ -101,6 +103,7 @@ class CompareApp(tk.Tk):
             "bddk_name": 220,
             "sql_name": 220,
             "status": 170,
+            "match_status": 140,
             "similarity": 90,
             "detail": 320,
         }
@@ -163,6 +166,7 @@ class CompareApp(tk.Tk):
                     row.bddk_name,
                     row.sql_name,
                     row.status,
+                    row.match_status,
                     f"{row.similarity:.0%}" if row.similarity else "",
                     row.detail,
                 ),
@@ -199,6 +203,7 @@ class CompareApp(tk.Tk):
                     "BddkAdi",
                     "SorguHesapAdi",
                     "Durum",
+                    "Eslesme_Durum",
                     "Benzerlik",
                     "Aciklama",
                 ]
@@ -212,6 +217,7 @@ class CompareApp(tk.Tk):
                         row.bddk_name,
                         row.sql_name,
                         row.status,
+                        row.match_status,
                         f"{row.similarity:.4f}" if row.similarity else "",
                         row.detail,
                     ]

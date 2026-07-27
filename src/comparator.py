@@ -23,6 +23,7 @@ class CompareResult:
     bddk_name: str
     sql_name: str
     status: str
+    match_status: str
     detail: str
     similarity: float
 
@@ -127,6 +128,7 @@ class CoaComparator:
                 bddk_name=bddk_name,
                 sql_name="",
                 status="SADECE_BDDK",
+                match_status="",
                 detail="Kod BDDK hesap planinda var, sorgu sonucunda yok.",
                 similarity=0.0,
             )
@@ -137,6 +139,7 @@ class CoaComparator:
             bddk_name="",
             sql_name=sql_name,
             status="SADECE_COA",
+            match_status="",
             detail="Kod sorgu sonucunda var, BDDK hesap planinda yok.",
             similarity=0.0,
         )
@@ -206,6 +209,7 @@ class CoaComparator:
             bddk_name=bddk_name,
             sql_name=sql_name,
             status=status,
+            match_status=f"{code} kodu eşleşti",
             detail=detail.strip(),
             similarity=best_similarity,
         )

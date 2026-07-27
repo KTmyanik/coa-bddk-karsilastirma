@@ -82,14 +82,12 @@ def normalize_text(value: str) -> str:
 
 
 def normalize_for_exact(value: str) -> str:
-    """Tam eslesme icin: Turkce katlama + bosluk duzeni; noktalama korunur."""
-    text = _fold_turkish(value)
-    # En/em dash gibi varyantlari tek tireye indir
-    text = text.replace("–", "-").replace("—", "-").replace("−", "-")
-    # Harf/rakam/bosluk ve yaygin noktalama: , . - / ( ) & +
-    text = re.sub(r"[^A-Z0-9 ,.\-/()&+]+", " ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    """Tam eslesme icin: sadece Turkce katlama; bosluk/noktalama/tire/yildiz korunur.
+
+    Dash varyantlari birlestirilmez (- ile – farkli sayilir).
+    Ic bosluklar oldugu gibi kalir; yalnizca bas/son trim edilir.
+    """
+    return _fold_turkish(value).strip()
 
 
 def normalize_code(value: str | int | float) -> str:
