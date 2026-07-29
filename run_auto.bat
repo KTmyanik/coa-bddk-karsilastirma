@@ -33,11 +33,16 @@ if not exist "connection.json" (
     goto :fail
 )
 
-echo [1/2] Bagimlilik kontrolu...
+echo [1/2] Bagimliliklar ^(offline once^)...
+if exist "vendor\wheels\*.whl" (
+    %PY% -m pip install --no-index --find-links="vendor\wheels" --user pyodbc pypdf >nul 2>&1
+)
+
 %PY% -c "import pyodbc, pypdf" >nul 2>&1
 if errorlevel 1 (
-    echo       Eksik paket var, run.bat ile once kurulum yapin.
-    echo       veya: %PY% -m pip install -r requirements.txt
+    echo [HATA] pyodbc veya pypdf eksik.
+    echo        Once run.bat veya install_offline.bat calistirin.
+    echo        vendor\wheels icinde pyodbc*-cp311-*-win_amd64.whl olmali.
     goto :fail
 )
 echo       pyodbc / pypdf hazir.
@@ -65,8 +70,14 @@ echo.
 echo --- Cozum onerileri ---
 echo 1. config.json -^> export_file yolunu duzenleyin
 echo 2. connection.json SQL ayarlarini kontrol edin
-echo 3. Manuel:  %PY% src\auto_compare.py
+echo 3. Offline kurulum: install_offline.bat
+echo 4. Manuel:  %PY% src\auto_compare.py
 echo.
+REM Task Scheduler'da pause takilmasin diye sadece konsolda bekle
+if "%COA_AUTO_NO_PAUSE%"=="1" (
+    endlocal
+    exit /b 1
+)
 pause
 endlocal
 exit /b 1
