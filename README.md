@@ -90,8 +90,22 @@ Sorgu sonucunda en az su kolonlar olmali: `Ledgercode`, `Ledgername`
 
 ## 4) Uygulamayi calistirma
 
+Manuel (GUI):
+
 ```powershell
 run.bat
+```
+
+Otomatik (karsilastir + Excel yaz + kapan):
+
+```powershell
+run_auto.bat
+```
+
+Cikti yolu `config.json` icinde `export_file` ile degistirilir:
+
+```json
+"export_file": "C:\\Users\\mesut\\Desktop\\coa_bddk_karsilastirma.csv"
 ```
 
 veya:

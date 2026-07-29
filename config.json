@@ -4,5 +4,6 @@
   "code_column": "Ledgercode",
   "name_column": "Ledgername",
   "bddk_url": "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1334",
-  "bddk_cache_file": "data/bddk_reference.json"
+  "bddk_cache_file": "data/bddk_reference.json",
+  "export_file": "C:\\Users\\mesut\\Desktop\\coa_bddk_karsilastirma.csv"
 }

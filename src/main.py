@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import csv
 import sys
 import tkinter as tk
 from pathlib import Path
@@ -18,6 +17,7 @@ if str(SRC_DIR) not in sys.path:
 from bddk_loader import load_bddk_accounts  # noqa: E402
 from comparator import CompareResult, CoaComparator  # noqa: E402
 from config_loader import load_config, project_root  # noqa: E402
+from export_util import export_results_csv  # noqa: E402
 from sql_loader import load_coa_from_sql  # noqa: E402
 
 
@@ -185,45 +185,24 @@ class CompareApp(tk.Tk):
             messagebox.showinfo("Bilgi", "Once karsilastirma calistirin.")
             return
 
+        config = load_config(self.config_path)
+        initial = "coa_bddk_karsilastirma.csv"
+        initial_dir = None
+        if config.export_file:
+            initial = config.export_file.name
+            initial_dir = str(config.export_file.parent)
+
         target = filedialog.asksaveasfilename(
             defaultextension=".csv",
-            filetypes=[("CSV", "*.csv")],
-            initialfile="coa_bddk_karsilastirma.csv",
+            filetypes=[("CSV (Excel)", "*.csv")],
+            initialfile=initial,
+            initialdir=initial_dir,
         )
         if not target:
             return
 
-        with open(target, "w", newline="", encoding="utf-8-sig") as handle:
-            writer = csv.writer(handle, delimiter=";")
-            writer.writerow(
-                [
-                    "Kod",
-                    "BddkKodu",
-                    "SorguKodu",
-                    "BddkAdi",
-                    "SorguHesapAdi",
-                    "Durum",
-                    "Eslesme_Durum",
-                    "Benzerlik",
-                    "Aciklama",
-                ]
-            )
-            for row in self.results:
-                writer.writerow(
-                    [
-                        row.code,
-                        row.bddk_code,
-                        row.sql_code,
-                        row.bddk_name,
-                        row.sql_name,
-                        row.status,
-                        row.match_status,
-                        f"{row.similarity:.4f}" if row.similarity else "",
-                        row.detail,
-                    ]
-                )
-
-        messagebox.showinfo("Tamam", f"Dosya kaydedildi:\n{target}")
+        saved = export_results_csv(self.results, Path(target))
+        messagebox.showinfo("Tamam", f"Dosya kaydedildi:\n{saved}")
 
     def open_config(self) -> None:
         path = self.config_path

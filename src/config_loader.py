@@ -20,6 +20,7 @@ class AppConfig:
     bddk_url: str
     bddk_cache_file: Path
     command_timeout_seconds: int
+    export_file: Path | None
 
 
 def project_root() -> Path:
@@ -50,6 +51,9 @@ def load_config(config_path: Path | None = None) -> AppConfig:
             **json.loads(connection_path.read_text(encoding="utf-8")),
         }
 
+    export_raw = payload.get("export_file") or payload.get("export_path")
+    export_file = resolve_project_path(export_raw) if export_raw else None
+
     return AppConfig(
         sql_server=connection_payload["sql_server"],
         database=connection_payload["database"],
@@ -62,6 +66,7 @@ def load_config(config_path: Path | None = None) -> AppConfig:
         bddk_url=payload.get("bddk_url", "https://www.bddk.org.tr/Mevzuat/DokumanGetir/1334"),
         bddk_cache_file=resolve_project_path(payload.get("bddk_cache_file", "data/bddk_reference.json")),
         command_timeout_seconds=int(connection_payload.get("command_timeout_seconds", 120)),
+        export_file=export_file,
     )
 
 
